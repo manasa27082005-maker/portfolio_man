@@ -1,0 +1,11 @@
+Changes
+1. I have send you the edited version of the homepage. Only slight changes are added their. Just get rid of the introduction that has been added there
+NOT NEEDED: 
+2. Currently these are bland cards, but it would be better to make them look like folders (like how it was in the portfolio that u took as the inspiration): 
+REST ARE PERFECTTTTTTTTT. ILYSMMMMMMM
+
+SOME THINGS THAT I WOULD WANT TO BE THERE:
+1. Add these Sections in this order itself in the header:
+Home | About | Experience | Projects | Contact
+Current header: Basically, add the above sections I have listed in the same order like that itself
+2. I hope u understood how you should organize the Experience Section (I have given the instructions in its page itself)

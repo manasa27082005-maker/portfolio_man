@@ -1,0 +1,1181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manasa Harikrishnan — Marketing & Communications Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --cream: #faf5f0;
+            --blush: #f2e8e2;
+            --terracotta: #b85c4a;
+            --terracotta-light: #c97260;
+            --charcoal: #2c2825;
+            --muted: #7a6e68;
+            --card-bg: #edddd7;
+            --card-border: #e2cec7;
+            --folder-pink: #d4877a;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--cream);
+            color: var(--charcoal);
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 300;
+            font-size: 15px;
+            line-height: 1.7;
+        }
+
+        /* ── NAV ── */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 24px 60px;
+            background: var(--cream);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.3s;
+        }
+
+        nav.scrolled {
+            border-bottom-color: var(--card-border);
+        }
+
+        .nav-name {
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 500;
+            font-size: 15px;
+            letter-spacing: 0.02em;
+            color: var(--charcoal);
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 36px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            font-size: 14px;
+            color: var(--muted);
+            text-decoration: none;
+            letter-spacing: 0.02em;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--terracotta);
+        }
+
+        /* ── HERO ── */
+        .hero {
+            padding: 60px 60px 80px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+            min-height: calc(100vh - 72px);
+        }
+
+        .hero-text {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-eyebrow {
+            font-size: 12px;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--terracotta);
+            margin-bottom: 24px;
+            font-weight: 400;
+        }
+
+        .hero-headline {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(42px, 5vw, 68px);
+            font-weight: 400;
+            line-height: 1.15;
+            color: var(--terracotta);
+            margin-bottom: 28px;
+        }
+
+        .hero-headline em {
+            font-style: italic;
+            font-weight: 300;
+        }
+
+        .hero-intro {
+            color: var(--muted);
+            font-size: 15px;
+            line-height: 1.8;
+            max-width: 440px;
+            margin-bottom: 40px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            padding: 12px 28px;
+            background: var(--terracotta);
+            color: white;
+            text-decoration: none;
+            font-size: 13px;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            font-weight: 400;
+            transition: background 0.2s;
+        }
+
+        .btn-primary:hover {
+            background: var(--terracotta-light);
+        }
+
+        .btn-outline {
+            padding: 12px 28px;
+            border: 1px solid var(--terracotta);
+            color: var(--terracotta);
+            text-decoration: none;
+            font-size: 13px;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            font-weight: 400;
+            transition: all 0.2s;
+        }
+
+        .btn-outline:hover {
+            background: var(--terracotta);
+            color: white;
+        }
+
+        .hero-image-wrap {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .hero-photo-placeholder {
+            width: 100%;
+            max-width: 380px;
+            aspect-ratio: 3/4;
+            background: var(--card-bg);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-photo-placeholder::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, var(--card-bg) 0%, var(--card-border) 100%);
+        }
+
+        .hero-photo-placeholder .placeholder-text {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            font-size: 12px;
+            color: var(--muted);
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            z-index: 2;
+        }
+
+        /* actual photo */
+        .hero-photo-placeholder img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* ── SECTION COMMONS ── */
+        section {
+            padding: 80px 60px;
+        }
+
+        .section-label {
+            font-size: 12px;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--terracotta);
+            font-weight: 400;
+            margin-bottom: 8px;
+        }
+
+        .two-col {
+            display: grid;
+            grid-template-columns: 260px 1fr;
+            gap: 60px;
+            align-items: start;
+        }
+
+        .two-col-label {
+            font-size: 13px;
+            letter-spacing: 0.08em;
+            color: var(--terracotta);
+            font-weight: 400;
+        }
+
+        .two-col-content {
+            max-width: 600px;
+        }
+
+        .two-col-content p {
+            color: var(--charcoal);
+            font-size: 15px;
+            line-height: 1.8;
+            font-weight: 300;
+        }
+
+        /* ── QUICK HIGHLIGHTS ── */
+        .highlights-section {
+            background: var(--blush);
+        }
+
+        .highlights-header {
+            margin-bottom: 48px;
+        }
+
+        .highlights-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 38px;
+            font-weight: 400;
+            color: var(--terracotta);
+            margin-bottom: 12px;
+        }
+
+        .highlights-sub {
+            color: var(--muted);
+            font-size: 14px;
+            max-width: 520px;
+            line-height: 1.7;
+        }
+
+        .highlights-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .highlight-card {
+            background: var(--cream);
+            padding: 32px 28px;
+            border: 1px solid var(--card-border);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .highlight-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 32px rgba(184, 92, 74, 0.1);
+        }
+
+        .highlight-card-num {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 28px;
+            color: var(--terracotta);
+            font-weight: 300;
+            margin-bottom: 16px;
+            opacity: 0.4;
+        }
+
+        .highlight-card-title {
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--charcoal);
+            margin-bottom: 10px;
+            letter-spacing: 0.02em;
+        }
+
+        .highlight-card-text {
+            font-size: 13px;
+            color: var(--muted);
+            line-height: 1.7;
+            font-weight: 300;
+        }
+
+        /* ── ABOUT ── */
+        .about-section {}
+
+        /* ── EXPERIENCE ── */
+        .experience-section {
+            background: var(--blush);
+        }
+
+        .exp-teaser {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 26px;
+            color: var(--terracotta);
+            font-weight: 400;
+            line-height: 1.4;
+            margin-bottom: 0;
+        }
+
+        .exp-grid {
+            margin-top: 56px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+        }
+
+        .exp-card {
+            background: var(--cream);
+            padding: 32px 28px;
+            border: 1px solid var(--card-border);
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+
+        .exp-card:hover {
+            transform: translateY(-3px);
+        }
+
+        .exp-card-top {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        .exp-dot {
+            width: 8px;
+            height: 8px;
+            background: var(--terracotta);
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+
+        .exp-org {
+            font-size: 11px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--terracotta);
+            font-weight: 400;
+        }
+
+        .exp-role {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 22px;
+            font-weight: 500;
+            color: var(--charcoal);
+            margin-bottom: 12px;
+            line-height: 1.3;
+        }
+
+        .exp-desc {
+            font-size: 13.5px;
+            color: var(--muted);
+            line-height: 1.75;
+            font-weight: 300;
+        }
+
+        /* ── PROJECTS ── */
+        .projects-section {}
+
+        .projects-header {
+            margin-bottom: 48px;
+        }
+
+        .projects-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 38px;
+            font-weight: 400;
+            color: var(--terracotta);
+            margin-bottom: 12px;
+        }
+
+        .projects-sub {
+            color: var(--muted);
+            font-size: 14px;
+            max-width: 480px;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .project-card {
+            background: var(--cream);
+            border: 1px solid var(--card-border);
+            overflow: hidden;
+            transition: transform 0.25s, box-shadow 0.25s;
+            cursor: pointer;
+            text-decoration: none;
+            display: block;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 16px 40px rgba(184, 92, 74, 0.12);
+        }
+
+        /* ── EXPERIENCE EXTENDED DETAILS ── */
+        .exp-details {
+            display: none;
+            background: rgba(255, 255, 255, 0.5);
+            padding: 24px;
+            margin-top: 20px;
+            border-top: 1px dashed var(--card-border);
+            border-radius: 4px;
+        }
+
+        .exp-card.expanded .exp-details {
+            display: block;
+            animation: slideDown 0.3s ease-out;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .exp-detail-section {
+            margin-bottom: 20px;
+        }
+
+        .exp-detail-title {
+            font-size: 11px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--terracotta);
+            margin-bottom: 6px;
+            font-weight: 500;
+        }
+
+        .exp-detail-text {
+            font-size: 13.5px;
+            color: var(--charcoal);
+            line-height: 1.7;
+            font-weight: 300;
+        }
+
+        .exp-detail-text ul {
+            padding-left: 20px;
+            margin-top: 8px;
+        }
+
+        .btn-small {
+            padding: 8px 16px;
+            border: 1px solid var(--terracotta);
+            color: var(--terracotta);
+            text-decoration: none;
+            font-size: 11px;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            display: inline-block;
+            margin-top: 12px;
+            transition: all 0.2s;
+        }
+
+        .btn-small:hover {
+            background: var(--terracotta);
+            color: white;
+        }
+
+        /* ── GENERAL TOGGLE ── */
+        .exp-card-toggle {
+            cursor: pointer;
+        }
+
+        .exp-card {
+            transition: all 0.3s ease;
+        }
+
+        .exp-card.expanded {
+            grid-column: 1 / -1;
+            /* Make expanded card span full width */
+            transform: none;
+            box-shadow: 0 12px 32px rgba(184, 92, 74, 0.08);
+        }
+
+        .folder-visual {
+            height: 140px;
+            background: var(--card-bg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .folder-icon {
+            width: 80px;
+            height: 66px;
+            position: relative;
+        }
+
+        .folder-icon .folder-back {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 56px;
+            background: var(--folder-pink);
+            border-radius: 0 4px 4px 4px;
+        }
+
+        .folder-icon .folder-tab {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 40%;
+            height: 16px;
+            background: var(--folder-pink);
+            border-radius: 4px 4px 0 0;
+        }
+
+        .folder-icon .folder-shine {
+            position: absolute;
+            top: 22px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 16px;
+            height: 16px;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 14px;
+        }
+
+        .project-info {
+            padding: 24px 24px 28px;
+        }
+
+        .project-title {
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--terracotta);
+            margin-bottom: 10px;
+            letter-spacing: 0.02em;
+        }
+
+        .project-desc {
+            font-size: 13px;
+            color: var(--muted);
+            line-height: 1.7;
+            font-weight: 300;
+        }
+
+        /* ── CERTIFICATIONS ── */
+        .certs-section {
+            background: var(--blush);
+        }
+
+        .certs-header {
+            margin-bottom: 48px;
+        }
+
+        .certs-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 38px;
+            font-weight: 400;
+            color: var(--terracotta);
+        }
+
+        .certs-list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+        }
+
+        .cert-item {
+            background: var(--cream);
+            padding: 20px 24px;
+            border: 1px solid var(--card-border);
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            transition: transform 0.2s;
+        }
+
+        .cert-item:hover {
+            transform: translateX(4px);
+        }
+
+        .cert-check {
+            width: 28px;
+            height: 28px;
+            background: var(--terracotta);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            color: white;
+            font-size: 12px;
+        }
+
+        .cert-name {
+            font-size: 13.5px;
+            color: var(--charcoal);
+            font-weight: 400;
+            line-height: 1.4;
+        }
+
+        /* ── CTA ── */
+        .cta-section {
+            text-align: left;
+            padding: 100px 60px;
+        }
+
+        .cta-heading {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(36px, 4.5vw, 58px);
+            font-weight: 400;
+            color: var(--terracotta);
+            line-height: 1.25;
+            max-width: 640px;
+            margin-bottom: 40px;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 16px;
+        }
+
+        /* ── CONTACT ── */
+        .contact-section {
+            background: var(--blush);
+            padding: 80px 60px;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: start;
+        }
+
+        .contact-left {}
+
+        .contact-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 38px;
+            font-weight: 400;
+            color: var(--terracotta);
+            margin-bottom: 16px;
+        }
+
+        .contact-text {
+            color: var(--muted);
+            font-size: 14px;
+            line-height: 1.8;
+            max-width: 380px;
+        }
+
+        .contact-right {}
+
+        .contact-items {
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+        }
+
+        .contact-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 0;
+            border-bottom: 1px solid var(--card-border);
+        }
+
+        .contact-row:first-child {
+            border-top: 1px solid var(--card-border);
+        }
+
+        .contact-row-label {
+            font-size: 11px;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--muted);
+            font-weight: 400;
+        }
+
+        .contact-row-val {
+            font-size: 14px;
+            color: var(--charcoal);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .contact-row-val:hover {
+            color: var(--terracotta);
+        }
+
+        /* ── FOOTER ── */
+        footer {
+            background: var(--cream);
+            padding: 48px 60px;
+            display: grid;
+            grid-template-columns: 1fr auto;
+            align-items: start;
+            border-top: 1px solid var(--card-border);
+        }
+
+        .footer-left {}
+
+        .footer-name {
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 500;
+            font-size: 15px;
+            color: var(--charcoal);
+            margin-bottom: 6px;
+        }
+
+        .footer-meta {
+            font-size: 12.5px;
+            color: var(--muted);
+            line-height: 1.6;
+        }
+
+        .footer-linkedin {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            background: var(--terracotta);
+            color: white;
+            text-decoration: none;
+            font-size: 12px;
+            margin-top: 12px;
+            font-weight: 500;
+            letter-spacing: 0;
+            transition: background 0.2s;
+        }
+
+        .footer-linkedin:hover {
+            background: var(--terracotta-light);
+        }
+
+        .footer-right {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 8px;
+        }
+
+        .footer-nav a {
+            display: block;
+            font-size: 13px;
+            color: var(--muted);
+            text-decoration: none;
+            text-align: right;
+            transition: color 0.2s;
+        }
+
+        .footer-nav a:hover {
+            color: var(--terracotta);
+        }
+
+        /* ── DIVIDER ── */
+        .section-divider {
+            width: 60px;
+            height: 1px;
+            background: var(--terracotta);
+            margin-bottom: 48px;
+            opacity: 0.4;
+        }
+
+        /* ── SCROLL FADE IN ── */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: none;
+        }
+
+        /* ── RESPONSIVE ── */
+        @media (max-width: 960px) {
+            nav {
+                padding: 20px 32px;
+            }
+
+            section {
+                padding: 60px 32px;
+            }
+
+            .hero {
+                padding: 48px 32px 64px;
+                grid-template-columns: 1fr;
+                min-height: auto;
+            }
+
+            .hero-image-wrap {
+                display: none;
+            }
+
+            .two-col {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .highlights-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .projects-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .exp-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .certs-list {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            footer {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+
+            .footer-right {
+                align-items: flex-start;
+            }
+
+            .footer-nav a {
+                text-align: left;
+            }
+
+            .cta-section {
+                padding: 72px 32px;
+            }
+        }
+
+        @media (max-width: 560px) {
+            nav {
+                padding: 16px 20px;
+            }
+
+            section {
+                padding: 48px 20px;
+            }
+
+            .hero {
+                padding: 36px 20px 52px;
+            }
+
+            .highlights-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .certs-list {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-section {
+                padding: 60px 20px;
+            }
+
+            footer {
+                padding: 40px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <nav id="navbar">
+    <a href="index.html" class="nav-name">Manasa Harikrishnan</a>
+    <ul class="nav-links">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="index.html#experience">Experience</a></li>
+        <li><a href="index.html#projects" class="active">Projects</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+</nav>
+
+    
+    <section class="case-study-hero" style="padding-top: 120px; padding-bottom: 60px; max-width: 1000px; margin: 0 auto; padding-left: 5%; padding-right: 5%;">
+        <div class="fade-in">
+            <a href="index.html#projects" style="font-size: 13px; color: var(--terracotta); text-decoration: none; display: inline-block; margin-bottom: 20px;">&larr; Back to Projects</a>
+            <p style="font-size: 14px; font-weight: 500; letter-spacing: 0.05em; color: var(--charcoal); margin-bottom: 12px; text-transform: uppercase;">Marketing Strategy</p>
+            <h1 style="font-family: 'Cormorant Garamond', serif; font-size: 48px; font-weight: 500; color: var(--terracotta); margin-bottom: 24px; line-height: 1.1;">ECOHAVEN — Digital Content Marketing Strategy</h1>
+            
+            <div style="width: 100%; height: 1px; background-color: rgba(62, 53, 49, 0.1); margin: 40px 0;"></div>
+            
+            <div class="two-col" style="gap: 40px; margin-bottom: 40px;">
+                <div>
+                    <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 28px; font-weight: 500; color: var(--terracotta); margin-bottom: 16px;">Project Overview</h3>
+                </div>
+                <div>
+                    <p style="margin-bottom: 16px;">ECOHAVEN is a semester-long digital marketing project focused on developing a strategic communication and content marketing plan for a hypothetical vegan and sustainable fashion brand. The project explored how eco-conscious clothing brands can attract, engage, and retain digital audiences through structured content strategies and social media marketing.</p>
+                    <p style="margin-bottom: 16px;">The project was executed in three phases, combining brand strategy development, audience research, social media listening, and practical digital marketing execution.</p>
+                    <p style="margin-bottom: 24px;">The goal was to demonstrate how a sustainability-focused fashion brand could build a strong digital presence while addressing key consumer concerns around ethical fashion, affordability, and transparency.</p>
+                    <a href="https://drive.google.com/file/d/1Wl9wwdn2ZXdPdinP-BLBoDnrPqSap_UA/view?usp=drive_link" target="_blank" class="btn-primary" style="display: inline-block;">View Full Project Document</a>
+                </div>
+            </div>
+
+            <div class="two-col" style="gap: 40px; margin-bottom: 40px;">
+                <div>
+                    <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 28px; font-weight: 500; color: var(--terracotta); margin-bottom: 16px;">Objective</h3>
+                </div>
+                <div>
+                    <p style="margin-bottom: 12px;">The project aimed to:</p>
+                    <ul style="padding-left: 20px; margin-bottom: 16px;">
+                        <li style="margin-bottom: 8px;">Develop a digital marketing strategy for a vegan and sustainable clothing brand</li>
+                        <li style="margin-bottom: 8px;">Identify key audience segments interested in ethical fashion</li>
+                        <li style="margin-bottom: 8px;">Understand online conversations around sustainable clothing brands</li>
+                        <li style="margin-bottom: 8px;">Design content strategies across the TOFU–MOFU–BOFU marketing funnel</li>
+                        <li style="margin-bottom: 8px;">Execute selected strategies to demonstrate practical digital marketing implementation</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div style="width: 100%; height: 1px; background-color: rgba(62, 53, 49, 0.1); margin: 40px 0;"></div>
+
+            <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 32px; font-weight: 500; color: var(--terracotta); margin-bottom: 24px; margin-top: 40px;">Phases & Execution</h3>
+            
+            <div style="margin-bottom: 40px;">
+                <h4 style="font-size: 20px; font-weight: 600; color: var(--charcoal); margin-bottom: 12px;">Phase 1 — Brand & Digital Strategy Development</h4>
+                <p style="margin-bottom: 16px;">The first phase focused on building the brand foundation and digital positioning for ECOHAVEN.</p>
+                <p style="margin-bottom: 12px;"><strong>Key activities included:</strong></p>
+                <ul style="padding-left: 20px; margin-bottom: 16px;">
+                    <li style="margin-bottom: 8px;">Developing the brand concept for a minimalist vegan fashion label</li>
+                    <li style="margin-bottom: 8px;">Analyzing market opportunities for sustainable clothing in India</li>
+                    <li style="margin-bottom: 8px;">Conducting competitor research within the ethical fashion space</li>
+                    <li style="margin-bottom: 8px;">Designing a TOFU–MOFU–BOFU content marketing funnel</li>
+                    <li style="margin-bottom: 8px;">Planning digital strategies including Instagram content, Pinterest lookbooks, SEO blogs, and influencer collaborations</li>
+                </ul>
+                <p style="margin-bottom: 16px;">This phase established ECOHAVEN’s positioning as an affordable, stylish, and transparent vegan fashion brand targeting conscious consumers. The brand identity emphasized minimal aesthetics, gender-neutral silhouettes, and plant-based fabrics such as organic cotton and hemp blends.</p>
+            </div>
+
+            <div style="margin-bottom: 40px;">
+                <h4 style="font-size: 20px; font-weight: 600; color: var(--charcoal); margin-bottom: 12px;">Phase 2 — Audience Personas & Social Media Listening</h4>
+                <p style="margin-bottom: 16px;">The second phase focused on understanding the target audience and analyzing online conversations around sustainable fashion.</p>
+                
+                <p style="margin-bottom: 12px;"><strong>Audience Persona Development:</strong></p>
+                <ul style="padding-left: 20px; margin-bottom: 16px; list-style-type: none;">
+                    <li style="margin-bottom: 12px;"><strong>Ananya Nair — The Idealist:</strong> A socially conscious college student interested in trendy yet affordable sustainable fashion.</li>
+                    <li style="margin-bottom: 12px;"><strong>Riya Singh — The Rational Consumer:</strong> A working professional seeking minimalist, high-quality clothing aligned with sustainability values.</li>
+                    <li style="margin-bottom: 12px;"><strong>Kabir Mehta — The Explorer:</strong> A sustainability-driven lifestyle enthusiast who prefers durable, ethically produced clothing.</li>
+                </ul>
+
+                <p style="margin-bottom: 12px;"><strong>Social Media Listening:</strong></p>
+                <p style="margin-bottom: 16px;">Social listening was conducted using BrandMentions to analyze conversations around sustainable fashion brands. Key insights revealed that Instagram is the dominant platform, consumers strongly value ethical production and eco-friendly fabrics, and key concerns include pricing, trend relevance, and brand transparency.</p>
+            </div>
+
+            <div style="margin-bottom: 40px;">
+                <h4 style="font-size: 20px; font-weight: 600; color: var(--charcoal); margin-bottom: 12px;">Phase 3 — Strategy Execution</h4>
+                <p style="margin-bottom: 16px;">The final phase involved implementing selected strategies from the marketing funnel to demonstrate practical digital marketing execution. From the strategies proposed in earlier phases, two strategies from each stage of the funnel (TOFU, MOFU, and BOFU) were selected for execution.</p>
+                
+                <ul style="padding-left: 20px; margin-bottom: 16px; list-style-type: none;">
+                    <li style="margin-bottom: 16px;"><strong>TOFU (Awareness & Discovery):</strong> Pinterest lookbook boards showcasing eco-friendly outfit inspiration and sustainable styling, and educational blog content explaining sustainable fabrics.</li>
+                    <li style="margin-bottom: 16px;"><strong>MOFU (Consideration & Trust):</strong> Fabric comparison content explaining sustainability differences between materials like hemp and cotton, and customer testimonial content demonstrating social proof.</li>
+                    <li style="margin-bottom: 16px;"><strong>BOFU (Retention & Advocacy):</strong> Post-purchase thank-you email concepts reinforcing the brand’s sustainability mission and referral campaign concepts encouraging customers to promote the brand.</li>
+                </ul>
+            </div>
+
+            <div style="width: 100%; height: 1px; background-color: rgba(62, 53, 49, 0.1); margin: 40px 0;"></div>
+
+            <div class="two-col" style="gap: 40px; margin-bottom: 40px;">
+                <div>
+                    <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 28px; font-weight: 500; color: var(--terracotta); margin-bottom: 16px;">Research Insights & Strategy</h3>
+                </div>
+                <div>
+                    <p style="margin-bottom: 12px;"><strong>Key insights from the research process included:</strong></p>
+                    <ul style="padding-left: 20px; margin-bottom: 24px;">
+                        <li style="margin-bottom: 8px;">Rising consumer awareness of sustainable and ethical fashion</li>
+                        <li style="margin-bottom: 8px;">Gen Z and young professionals emerging as key eco-conscious consumers</li>
+                        <li style="margin-bottom: 8px;">Instagram and Pinterest acting as major fashion discovery platforms</li>
+                        <li style="margin-bottom: 8px;">Consumers value sustainability but are concerned about pricing and trend relevance</li>
+                    </ul>
+
+                    <p style="margin-bottom: 12px;"><strong>The digital strategy focused on:</strong></p>
+                    <ul style="padding-left: 20px; margin-bottom: 16px;">
+                        <li style="margin-bottom: 8px;">Educational content around sustainable fabrics and ethical fashion</li>
+                        <li style="margin-bottom: 8px;">Visual storytelling through Instagram and Pinterest</li>
+                        <li style="margin-bottom: 8px;">Community engagement through user-generated content</li>
+                        <li style="margin-bottom: 8px;">Transparent communication around sourcing and sustainability</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="two-col" style="gap: 40px; margin-bottom: 40px;">
+                <div>
+                    <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 28px; font-weight: 500; color: var(--terracotta); margin-bottom: 16px;">Key Outcome</h3>
+                </div>
+                <div>
+                    <p style="margin-bottom: 16px;">The project resulted in a structured digital marketing strategy for a sustainable fashion brand, supported by audience research, competitor analysis, and practical content execution examples. By combining persona insights, social listening data, and funnel-based strategies, ECOHAVEN was positioned as a modern eco-conscious brand capable of connecting with sustainability-driven consumers online.</p>
+                </div>
+            </div>
+
+            <div style="width: 100%; height: 1px; background-color: rgba(62, 53, 49, 0.1); margin: 40px 0;"></div>
+
+            <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 32px; font-weight: 500; color: var(--terracotta); margin-bottom: 24px; margin-top: 40px;">Project Deliverables</h3>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 24px;">
+                <div style="border: 1px solid rgba(62, 53, 49, 0.1); padding: 24px; border-radius: 8px; transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='none'">
+                    <h4 style="font-size: 18px; font-weight: 600; margin-bottom: 8px;">Brand Strategy Presentation</h4>
+                    <p style="font-size: 14px; margin-bottom: 16px; color: var(--charcoal);">Brand concept, market opportunity, competitor analysis, and TOFU–MOFU–BOFU digital marketing strategy.</p>
+                    <a href="https://drive.google.com/file/d/1Wl9wwdn2ZXdPdinP-BLBoDnrPqSap_UA/view?usp=drive_link" target="_blank" class="btn-outline" style="font-size: 12px; padding: 10px 16px;">View Presentation</a>
+                </div>
+                
+                <div style="border: 1px solid rgba(62, 53, 49, 0.1); padding: 24px; border-radius: 8px; transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='none'">
+                    <h4 style="font-size: 18px; font-weight: 600; margin-bottom: 8px;">Audience Persona & Social Listening Analysis</h4>
+                    <p style="font-size: 14px; margin-bottom: 16px; color: var(--charcoal);">Customer personas and social media listening insights used to shape ECOHAVEN’s digital communication strategy.</p>
+                    <a href="https://drive.google.com/file/d/1M8SbYAR_kzEarf4DLOkIA63x-4OF3AgE/view?usp=drive_link" target="_blank" class="btn-outline" style="font-size: 12px; padding: 10px 16px;">View Research</a>
+                </div>
+
+                <div style="border: 1px solid rgba(62, 53, 49, 0.1); padding: 24px; border-radius: 8px; transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='none'">
+                    <h4 style="font-size: 18px; font-weight: 600; margin-bottom: 8px;">Pinterest Lookbook</h4>
+                    <p style="font-size: 14px; margin-bottom: 16px; color: var(--charcoal);">Visual moodboard exploring sustainable fashion aesthetics, styling inspiration, and brand visual identity.</p>
+                    <a href="https://pin.it/3lwmERMDV" target="_blank" class="btn-outline" style="font-size: 12px; padding: 10px 16px;">View Pinterest Board</a>
+                </div>
+
+                <div style="border: 1px solid rgba(62, 53, 49, 0.1); padding: 24px; border-radius: 8px; transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='none'">
+                    <h4 style="font-size: 18px; font-weight: 600; margin-bottom: 8px;">ECOHAVEN Website Prototype</h4>
+                    <p style="font-size: 14px; margin-bottom: 16px; color: var(--charcoal);">Prototype website demonstrating how the brand strategy translates into a functional digital brand experience.</p>
+                    <a href="https://ecohaven-rho.vercel.app/4" target="_blank" class="btn-outline" style="font-size: 12px; padding: 10px 16px;">Visit Website</a>
+                </div>
+            </div>
+
+            <div style="margin-top: 60px; text-align: center;">
+                <p style="font-size: 20px; font-family: 'Cormorant Garamond', serif; color: var(--terracotta); margin-bottom: 24px;">Explore Other Projects</p>
+                <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
+                    <a href="case-study-gopro.html" class="btn-outline">GoPro × L'Oréal</a>
+                    <a href="case-study-folee.html" class="btn-outline">Folée Cupcake Brand</a>
+                    <a href="case-study-actor-prepares.html" class="btn-outline">Actor Prepares</a>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-left">
+            <div class="footer-name">Manasa Harikrishnan</div>
+            <div class="footer-meta">
+                Palakkad, Kerala, India &nbsp;|&nbsp; +91 8606241692 &nbsp;|&nbsp; manasa27082005@gmail.com<br>
+                © Manasa Harikrishnan, 2024
+            </div>
+            <a href="https://www.linkedin.com/in/manasa-harikrishnan" target="_blank" class="footer-linkedin"
+                title="LinkedIn">in</a>
+        </div>
+        <div class="footer-right">
+            <nav class="footer-nav">
+                <a href="index.html#home">Home</a>
+                <a href="about.html">About</a>
+                <a href="index.html#experience">Experience</a>
+                <a href="index.html#projects">Projects</a>
+                <a href="index.html#contact">Contact</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script>
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            navbar.classList.toggle('scrolled', window.scrollY > 20);
+        });
+
+        // Scroll fade-in
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.12 });
+
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+        // Activate on load for hero
+        document.querySelectorAll('.hero .fade-in').forEach(el => {
+            setTimeout(() => el.classList.add('visible'), 100);
+        });
+
+        // Active nav link on scroll
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-links a');
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(s => {
+                if (window.scrollY >= s.offsetTop - 100) current = s.id;
+            });
+            navLinks.forEach(a => {
+                // simple hack, only process on index page anchors
+                if (a.getAttribute('href').startsWith('#')) {
+                    a.classList.remove('active');
+                    if (a.getAttribute('href') === '#' + current) a.classList.add('active');
+                }
+            });
+        });
+
+        // Expand/Collapse Experience Cards
+        function toggleExpCard(element) {
+            const card = element.parentElement;
+            // close any open ones
+            document.querySelectorAll('.exp-card').forEach(c => {
+                if (c !== card) c.classList.remove('expanded');
+            });
+            // toggle this one
+            card.classList.toggle('expanded');
+
+            // tiny scroll offset if opening so we can see the title cleanly
+            if (card.classList.contains('expanded')) {
+                setTimeout(() => {
+                    const offset = card.getBoundingClientRect().top + window.scrollY - 100;
+                    window.scrollTo({ top: offset, behavior: 'smooth' });
+                }, 300);
+            }
+        }
+    </script>
+
+</body>
+
+</html>

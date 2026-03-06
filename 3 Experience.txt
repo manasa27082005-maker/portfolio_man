@@ -1,0 +1,158 @@
+Experience Page Structure
+The Experience page should display four cards, each representing one internship. Each card should show the organization name and my role. When a user clicks on a card, an expandable section should appear on the same page displaying detailed information about that internship.
+The expandable section should include the following details: Role, Organization, Time Period, Mode of Work, Organization Context, Role Overview, Key Contributions, Skills Used, and Tools Used.
+At the bottom of the expandable section, there should be a button labeled “See Work Samples.” When the user clicks this button, it should open a separate page dedicated to that internship, where I will provide Google Drive links to the work samples along with a short explanation of each piece of work.
+The goal is to keep the Experience page clean and easy to scan, while allowing visitors to explore more detailed information and work samples if they are interested.
+CARDS:
+Copywriter Intern - InAmigos Foundation
+Role Copywriter Intern
+Organization InAmigos Foundation (IAF)
+Time Period June 2025
+Mode of Work Remote
+
+Organization Context
+InAmigos Foundation is a Section 8 registered nonprofit organization founded in 2020 in Bilaspur, Chhattisgarh, working to create positive social impact through community-driven initiatives. The foundation focuses on areas such as animal welfare, environmental sustainability, education, and social empowerment, engaging volunteers and communities across India to support these causes.
+
+Role Overview
+As a Copywriting Intern, I created research-based articles, campaign content, and social media messaging for awareness initiatives. My work focused on translating complex social and environmental topics into engaging and accessible content for digital platforms while supporting the foundation’s communication and outreach efforts.
+
+Key Contributions
+• Researched and wrote long-form articles on animal welfare and community initiatives.
+• Developed awareness content for the Project Jeev campaign, promoting the importance of feeding and caring for stray animals.
+• Created social media copy and awareness posts to communicate campaign messages effectively.
+• Structured written content to align with nonprofit communication goals and audience engagement strategies.
+• Contributed content published on platforms such as Facebook and X (Twitter).
+• Adapted long-form written content into concise social media messaging.
+
+Skills Used
+Content Writing Copywriting Research-Based Writing Social Impact Communication Editing
+
+Tools Used
+Canva Microsoft Word Google Docs Social Media Platforms (Facebook & X/Twitter)
+Work Samples (For the “See Work Samples” Page)
+Work Samples (For the “See Work Samples” Page)
+Article — One Meal at a Time: How a Simple Act of Feeding an Animal Sparks Healing
+A long-form awareness article written for the Project Jeev initiative, explaining how feeding stray animals contributes to compassion, public health, and environmental sustainability. The article explores the broader social impact of animal welfare initiatives and encourages community participation.
+Task 1, Feeding Impact: https://drive.google.com/file/d/10yug8nvRxflqRv5FsZemGxfOHaf0D9Xh/view?usp=drivesdk
+
+Social Media Awareness Content
+Created supporting social media posts to promote the article and raise awareness about Project Jeev. The posts translated the key message of the article into concise and engaging social media content suitable for platforms such as Facebook and X/Twitter.
+Task Link: https://drive.google.com/file/d/1CDf_pU-xidekfbnUl-Gd8ZkCtVWU53pS/view?usp=drivesdk
+
+Campaign Article - Animal Protection & Feeding: A Demonstration of Compassion
+A research-based article explaining the impact of feeding programs and animal protection initiatives carried out by the organization. The piece highlights community involvement, volunteer engagement, and the broader social value of compassionate action.
+Task 3, Animal Protection: https://drive.google.com/file/d/1AVl7-HPYsS6oBWogmMJbCauBQK6Fqf6O/view?usp=drivesdk
+
+Campaign Content - Major Reasons to Inspire Youth to Volunteer
+Developed a campaign content piece highlighting the benefits of volunteering with the foundation. The content focuses on encouraging youth participation through clear messaging about social impact, personal development, and community engagement.
+Task 4, Campign task: https://drive.google.com/file/d/1iBxAih_7JpfJdmQiU9Z834N2P8hp3kRV/view?usp=drivesdk
+Content Writing & Marketing Intern - Kshitiksha Foundation
+Basic Information
+Role Content Writing & Marketing Intern
+Organization Kshitiksha Foundation
+Time Period May 2025 – June 2025
+Mode of Work Remote
+
+Organization Context
+Kshitiksha Foundation is an ISO-certified Section 8 nonprofit organization founded in 2021 in Greater Noida, India, working to create positive social impact through community-driven initiatives. The organization focuses on areas such as environmental conservation, stray animal welfare, education, and women’s empowerment, engaging volunteers and youth in awareness campaigns and initiatives that promote sustainability, compassion, and responsible community participation.
+
+Role Overview
+As a Content Writing & Marketing Intern, I created awareness-focused content addressing topics such as mental health, environmental sustainability, and animal welfare. My work involved developing informative and engaging written material designed to encourage responsible behavior, promote social initiatives, and increase awareness of community issues.
+
+Key Contributions
+• Created awareness content addressing topics such as mental health, environmental sustainability, and animal welfare.
+• Developed educational articles and campaign messaging designed to promote compassionate and socially responsible behavior.
+• Contributed written content supporting the organization’s awareness initiatives and community engagement efforts.
+• Produced digital content communicating social issues in an accessible and relatable manner.
+• Promoted environmental awareness initiatives encouraging actions such as tree planting and sustainable practices.
+
+Skills Used
+Content Writing Awareness Campaign Communication Social Impact Communication Research-Based Writing Editing
+
+Tools Used
+Canva Microsoft Word Google Docs
+Work Samples (For the “See Work Samples” Page)
+Mental Health Awareness Content — Coping With Mental Illness
+Developed an awareness-focused content piece encouraging individuals to adopt simple mental health practices such as movement, breathing techniques, and social support. The content aimed to make mental health conversations more approachable and supportive for readers. 
+Task Link: https://drive.google.com/file/d/1sKuRp0DvcD_CSLIZtQ1xW6LJkshiw1U9/view?usp=drivesdk
+
+Environmental Awareness Content — Plant a Sapling Today
+Created an awareness article encouraging individuals to participate in environmental conservation through tree planting. The content explained the ecological benefits of planting trees and documented a personal sapling plantation activity carried out as part of the internship initiative. 
+Task Link: https://drive.google.com/file/d/1rroJA0v8PDwUnPtheJHhI4TQggvom0Ap/view?usp=drivesdk
+Animal Welfare Awareness Content — Why One Should Feed an Animal Daily
+Produced an educational article highlighting the importance of feeding stray animals and promoting empathy toward urban wildlife. The piece emphasized how small acts of compassion can contribute to animal welfare and community harmony. 
+Task Link: https://drive.google.com/file/d/13E7hMuaYBSVDcKcp8vIV-1aNqZ9b2eE2/view?usp=drivesdk
+Communications Intern - Young Leaders India
+Basic Information
+Role Content Writing & Marketing Intern
+Organization Kshitiksha Foundation
+Time Period May 2025 – June 2025
+Mode of Work Remote
+
+Organization Context
+Kshitiksha Foundation is an ISO-certified Section 8 nonprofit organization founded in 2021 in Greater Noida, India, working to create positive social impact through community-driven initiatives. The organization focuses on areas such as environmental conservation, stray animal welfare, education, and women’s empowerment, engaging volunteers and youth in awareness campaigns and initiatives that promote sustainability, compassion, and responsible community participation.
+
+Role Overview
+As a Content Writing & Marketing Intern, I created awareness-focused content addressing topics such as mental health, environmental sustainability, and animal welfare. My work involved developing informative and engaging written material designed to encourage responsible behavior, promote social initiatives, and increase awareness of community issues.
+
+Key Contributions
+• Created awareness content addressing topics such as mental health, environmental sustainability, and animal welfare.
+• Developed educational articles and campaign messaging designed to promote compassionate and socially responsible behavior.
+• Contributed written content supporting the organization’s awareness initiatives and community engagement efforts.
+• Produced digital content communicating social issues in an accessible and relatable manner.
+• Promoted environmental awareness initiatives encouraging actions such as tree planting and sustainable practices.
+
+Skills Used
+Content Writing Awareness Campaign Communication Social Impact Communication Research-Based Writing Editing
+
+Tools Used
+Canva Microsoft Word Google Docs
+Work Samples (For the “See Work Samples” Page)
+LinkedIn Page Audit — Young Leaders India Conducted an initial assessment of the Young Leaders India LinkedIn page, identifying strengths, gaps in content activity, and opportunities to activate the page through structured communication and thought-leadership content.
+Task Link: https://drive.google.com/file/d/1SdXtOuZE96Yw4-S065b04IRHf1CeHNa9/view?usp=drivesdk
+
+Social Media Strategy Plan — Young Leaders India Developed a strategy-level social media plan outlining YLI’s positioning at the intersection of governance, leadership, and public policy. The plan defines platform strategy, core content pillars, and long-term communication direction for the organization’s digital presence.
+Task Link: https://drive.google.com/file/d/1LzIXS5zLWEMQ7NIRtk5agr11TaT04t_D/view?usp=drivesdk
+Content Strategy & PR Intern - Paranubhuti Foundation
+Basic Information
+Role Content Strategy & PR Intern
+Organization Paranubhuti Foundation
+Time Period January 2026 – Present
+Mode of Work Remote
+
+Organization Context
+Paranubhuti Foundation is a Government of India–registered Section 8 nonprofit organization working to create sustainable social impact through initiatives in healthcare, education, women empowerment, environmental sustainability, and community development. The organization focuses on bridging the gap between underserved communities and essential resources through initiatives such as eye care camps, educational support programs, healthcare assistance, and environmental awareness campaigns.
+
+Role Overview
+As a Content Strategy & PR Intern, I worked on developing leadership communication narratives and structured messaging for the organization. My role involved transforming the foundation’s mission, initiatives, and impact stories into publish-ready communication assets that could support media coverage, donor communication, and organizational branding.
+The work focused on building clear PR narratives, press-style storytelling, and structured messaging frameworks that strengthen the organization’s credibility and visibility among donors, partners, and stakeholders.
+
+Key Contributions
+• Developed three leadership PR narratives for the Founder and two senior team members to strengthen organizational credibility and leadership positioning.
+• Drafted an 800+ word press-style feature article highlighting the foundation’s impact across healthcare, education, and community development initiatives.
+• Created supporting communication assets including five media-ready impact quotes and six headline variations for potential press adaptation.
+• Structured 10+ key messaging points aligned with the foundation’s core initiatives in healthcare, education, empowerment, and sustainability.
+• Produced communication materials adaptable across three publishing formats: press coverage, brochures (print), and digital platforms.
+• Collaborated with senior leadership to translate the organization’s mission and impact into five publish-ready communication deliverables.
+
+Skills Used
+Public Relations Writing Strategic Messaging Leadership Storytelling Content Strategy Development Social Impact Communication
+
+Tools Used
+Microsoft Word Google Docs Canva
+Work Samples (For the “See Work Samples” Page)
+Leadership PR Storylines — Paranubhuti Foundation
+Developed structured PR narratives for the foundation’s leadership, including the Founder and senior team members. The document highlights their professional journeys, leadership vision, and the foundation’s mission of translating empathy into measurable social impact. 
+Paranubhuti Foundation – Founde…
+Task Link: https://drive.google.com/file/d/1oIJnX3TT174lilPjI7nre_9fhzf_K8Bp/view?usp=drivesdk
+
+PR Messaging & Communication Framework
+Created a messaging framework outlining the foundation’s key causes, impact narratives, and donor-focused communication themes across healthcare, education, empowerment, and sustainability initiatives. 
+PR & Storyline Document - Paran…
+Task Link: https://drive.google.com/file/d/1cCX3gMQ4t07pr3xlcbhvZKTyRr41PeV4/view?usp=drivesdk
+
+Press Feature Article — Paranubhuti Foundation
+Authored a long-form press-style feature article presenting the foundation’s mission, leadership team, and community impact initiatives, designed for adaptation across media coverage, brochures, and digital platforms. 
+Press Feature Story
+Task Link: https://drive.google.com/file/d/1v2ahoQovh2QdVOBMrjD9sl6af64V1cfv/view?usp=drivesdk
+

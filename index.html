@@ -423,18 +423,105 @@
             gap: 24px;
         }
 
-        /* folder card */
         .project-card {
             background: var(--cream);
             border: 1px solid var(--card-border);
             overflow: hidden;
             transition: transform 0.25s, box-shadow 0.25s;
             cursor: pointer;
+            text-decoration: none;
+            display: block;
         }
 
         .project-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 16px 40px rgba(184, 92, 74, 0.12);
+        }
+
+        /* ── EXPERIENCE EXTENDED DETAILS ── */
+        .exp-details {
+            display: none;
+            background: rgba(255, 255, 255, 0.5);
+            padding: 24px;
+            margin-top: 20px;
+            border-top: 1px dashed var(--card-border);
+            border-radius: 4px;
+        }
+
+        .exp-card.expanded .exp-details {
+            display: block;
+            animation: slideDown 0.3s ease-out;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .exp-detail-section {
+            margin-bottom: 20px;
+        }
+
+        .exp-detail-title {
+            font-size: 11px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--terracotta);
+            margin-bottom: 6px;
+            font-weight: 500;
+        }
+
+        .exp-detail-text {
+            font-size: 13.5px;
+            color: var(--charcoal);
+            line-height: 1.7;
+            font-weight: 300;
+        }
+
+        .exp-detail-text ul {
+            padding-left: 20px;
+            margin-top: 8px;
+        }
+
+        .btn-small {
+            padding: 8px 16px;
+            border: 1px solid var(--terracotta);
+            color: var(--terracotta);
+            text-decoration: none;
+            font-size: 11px;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            display: inline-block;
+            margin-top: 12px;
+            transition: all 0.2s;
+        }
+
+        .btn-small:hover {
+            background: var(--terracotta);
+            color: white;
+        }
+
+        /* ── GENERAL TOGGLE ── */
+        .exp-card-toggle {
+            cursor: pointer;
+        }
+
+        .exp-card {
+            transition: all 0.3s ease;
+        }
+
+        .exp-card.expanded {
+            grid-column: 1 / -1;
+            /* Make expanded card span full width */
+            transform: none;
+            box-shadow: 0 12px 32px rgba(184, 92, 74, 0.08);
         }
 
         .folder-visual {
@@ -841,16 +928,18 @@
     <nav id="navbar">
         <a href="#" class="nav-name">Manasa Harikrishnan</a>
         <ul class="nav-links">
-            <li><a href="#about" class="active">Home</a></li>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact me</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
     <!-- HERO -->
     <section class="hero" id="home">
         <div class="hero-text fade-in">
-            <p class="hero-eyebrow">Marketing · Content Strategy · Communications</p>
+            <p class="hero-eyebrow">Marketing, Content Strategy & Communications</p>
             <h1 class="hero-headline">
                 Turning strategy<br>
                 and <em>storytelling</em><br>
@@ -864,13 +953,12 @@
             </p>
             <div class="hero-buttons">
                 <a href="#projects" class="btn-primary">View My Work →</a>
-                <a href="#" class="btn-outline">Download Resume</a>
+                <a href="Manasa_Harikrishnan_Resume.pdf" target="_blank" class="btn-outline">Download Resume →</a>
             </div>
         </div>
         <div class="hero-image-wrap fade-in" style="transition-delay:0.15s">
-            <div class="hero-photo-placeholder">
-                <!-- Replace with: <img src="your-photo.jpg" alt="Manasa Harikrishnan"> -->
-                <span class="placeholder-text">Your Photo Here</span>
+            <div class="hero-photo-placeholder" style="border: none; background: transparent;">
+                <img src="image.png" alt="Manasa Harikrishnan" style="position: relative; z-index: 10;">
             </div>
         </div>
     </section>
@@ -911,29 +999,13 @@
         </div>
     </section>
 
-    <!-- ABOUT -->
-    <section id="about">
-        <div class="two-col fade-in">
-            <div>
-                <p class="two-col-label">01 — Introduction</p>
-            </div>
-            <div class="two-col-content">
-                <p>Hey, I'm Manasa! I'm a Mass Communication student with a strong interest in marketing strategy,
-                    audience research, and digital storytelling. My work focuses on understanding how brands communicate
-                    with audiences and how strategic content can influence engagement and perception.</p>
-                <br>
-                <p>Through internships and academic projects, I have gained experience in communication strategy,
-                    content development, and marketing analysis — particularly within nonprofit and youth-focused
-                    organizations.</p>
-            </div>
-        </div>
-    </section>
+
 
     <!-- EXPERIENCE -->
     <section class="experience-section" id="experience">
         <div class="two-col fade-in">
             <div>
-                <p class="two-col-label">02 — Experience</p>
+                <p class="two-col-label">01 — Experience</p>
             </div>
             <div>
                 <p class="exp-teaser">Want to see where I've made an impact? Look below for details.</p>
@@ -942,42 +1014,254 @@
 
         <div class="exp-grid">
             <div class="exp-card fade-in" style="transition-delay:0.05s">
-                <div class="exp-card-top">
-                    <div class="exp-dot"></div>
-                    <span class="exp-org">Young Leaders India</span>
+                <div class="exp-card-toggle" onclick="toggleExpCard(this)">
+                    <div class="exp-card-top">
+                        <div class="exp-dot"></div>
+                        <span class="exp-org">Young Leaders India</span>
+                    </div>
+                    <div class="exp-role">Communications Intern</div>
+                    <p class="exp-desc" style="margin-bottom: 0;">Developed a two-month social media strategy focused on
+                        leadership and governance positioning. Created content pillars, designed a platform strategy for
+                        LinkedIn and Instagram, and structured a content calendar to test engagement patterns.</p>
+                    <p style="font-size: 11px; color: var(--terracotta); margin-top: 12px; font-weight: 500;">CLICK TO
+                        EXPAND/COLLAPSE ↕</p>
                 </div>
-                <div class="exp-role">Communications Intern</div>
-                <p class="exp-desc">Developed a two-month social media strategy focused on leadership and governance
-                    positioning. Created content pillars, designed a platform strategy for LinkedIn and Instagram, and
-                    structured a content calendar to test engagement patterns.</p>
+                <div class="exp-details">
+                    <div class="exp-detail-section">
+                        <p class="exp-detail-title">Basic Information</p>
+                        <p class="exp-detail-text"><strong>Time Period:</strong> May 2025 – June 2025<br><strong>Mode of
+                                Work:</strong> Remote</p>
+                    </div>
+                    <div class="exp-detail-section">
+                        <p class="exp-detail-title">Organization Context</p>
+                        <p class="exp-detail-text">Kshitiksha Foundation is an ISO-certified Section 8 nonprofit
+                            organization founded in 2021 in Greater Noida, India, working to create positive social
+                            impact through community-driven initiatives. The organization focuses on areas such as
+                            environmental conservation, stray animal welfare, education, and women’s empowerment,
+                            engaging volunteers and youth in awareness campaigns and initiatives that promote
+                            sustainability, compassion, and responsible community participation.</p>
+                    </div>
+                    <div class="exp-detail-section">
+                        <p class="exp-detail-title">Role Overview</p>
+                        <p class="exp-detail-text">As a Content Writing & Marketing Intern, I created awareness-focused
+                            content addressing topics such as mental health, environmental sustainability, and animal
+                            welfare. My work involved developing informative and engaging written material designed to
+                            encourage responsible behavior, promote social initiatives, and increase awareness of
+                            community issues.</p>
+                    </div>
+                    <div class="exp-detail-section">
+                        <p class="exp-detail-title">Key Contributions</p>
+                        <div class="exp-detail-text">
+                            <ul>
+                                <li>Created awareness content addressing topics such as mental health, environmental
+                                    sustainability, and animal welfare.</li>
+                                <li>Developed educational articles and campaign messaging designed to promote
+                                    compassionate and socially responsible behavior.</li>
+                                <li>Contributed written content supporting the organization’s awareness initiatives and
+                                    community engagement efforts.</li>
+                                <li>Produced digital content communicating social issues in an accessible and relatable
+                                    manner.</li>
+                                <li>Promoted environmental awareness initiatives encouraging actions such as tree
+                                    planting and sustainable practices.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="exp-detail-section">
+                        <p class="exp-detail-title">Skills & Tools</p>
+                        <p class="exp-detail-text"><strong>Skills:</strong> Content Writing, Awareness Campaign
+                            Communication, Social Impact Communication, Research-Based Writing,
+                            Editing<br><strong>Tools:</strong> Canva, Microsoft Word, Google Docs</p>
+                    </div>
+                    <a href="work-yli.html" class="btn-small">See Work Samples →</a>
+                </div>
             </div>
             <div class="exp-card fade-in" style="transition-delay:0.1s">
-                <div class="exp-card-top">
-                    <div class="exp-dot"></div>
-                    <span class="exp-org">Paranubhuti Foundation</span>
+                <div class="exp-card-toggle" onclick="toggleExpCard(this)">
+                    <div class="exp-card-top">
+                        <div class="exp-dot"></div>
+                        <span class="exp-org">Paranubhuti Foundation</span>
+                    </div>
+                    <div class="exp-role">Content Strategy & PR Intern</div>
+                    <p class="exp-desc" style="margin-bottom: 0;">Developed leadership PR narratives and communication
+                        frameworks to strengthen organizational positioning. Created press-style content and messaging
+                        assets for digital and print platforms.</p>
+                    <p style="font-size: 11px; color: var(--terracotta); margin-top: 12px; font-weight: 500;">CLICK TO
+                        EXPAND/COLLAPSE ↕</p>
                 </div>
-                <div class="exp-role">Content Strategy & PR Intern</div>
-                <p class="exp-desc">Developed leadership PR narratives and communication frameworks to strengthen
-                    organizational positioning. Created press-style content and messaging assets for digital and print
-                    platforms.</p>
+                <div class="exp-details">
+                    <div class="exp-detail-section">
+                        <p class="exp-detail-title">Basic Information</p>
+                        <p class="exp-detail-text"><strong>Time Period:</strong> January 2026 – Present<br><strong>Mode
+                                of Work:</strong> Remote</p>
+                    </div>
+                    <div class="exp-detail-section">
+                        <p class="exp-detail-title">Organization Context</p>
+                        <p class="exp-detail-text">Paranubhuti Foundation is a Government of India–registered Section 8
+                            nonprofit organization working to create sustainable social impact through initiatives in
+                            healthcare, education, women empowerment, environmental sustainability, and community
+                            development. The organization focuses on bridging the gap between underserved communities
+                            and essential resources through initiatives such as eye care camps, educational support
+                            programs, healthcare assistance, and environmental awareness campaigns.</p>
+                    </div>
+                    <div class="exp-detail-section">
+                        <p class="exp-detail-title">Role Overview</p>
+                        <p class="exp-detail-text">As a Content Strategy & PR Intern, I worked on developing leadership
+                            communication narratives and structured messaging for the organization. My role involved
+                            transforming the foundation’s mission, initiatives, and impact stories into publish-ready
+                            communication assets that could support media coverage, donor communication, and
+                            organizational branding. The work focused on building clear PR narratives, press-style
+                            storytelling, and structured messaging frameworks that strengthen the organization’s
+                            credibility and visibility among donors, partners, and stakeholders.</p>
+                    </div>
+                    <div class="exp-detail-section">
+                        <p class="exp-detail-title">Key Contributions</p>
+                        <div class="exp-detail-text">
+                            <ul>
+                                <li>Developed three leadership PR narratives for the Founder and two senior team members
+                                    to strengthen organizational credibility and leadership positioning.</li>
+                                <li>Drafted an 800+ word press-style feature article highlighting the foundation’s
+                                    impact across healthcare, education, and community development initiatives.</li>
+                                <li>Created supporting communication assets including five media-ready impact quotes and
+                                    six headline variations for potential press adaptation.</li>
+                                <li>Structured 10+ key messaging points aligned with the foundation’s core initiatives
+                                    in healthcare, education, empowerment, and sustainability.</li>
+                                <li>Produced communication materials adaptable across three publishing formats: press
+                                    coverage, brochures (print), and digital platforms.</li>
+                                <li>Collaborated with senior leadership to translate the organization’s mission and
+                                    impact into five publish-ready communication deliverables.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="exp-detail-section">
+                        <p class="exp-detail-title">Skills & Tools</p>
+                        <p class="exp-detail-text"><strong>Skills:</strong> Public Relations Writing, Strategic
+                            Messaging, Leadership Storytelling, Content Strategy Development, Social Impact
+                            Communication<br><strong>Tools:</strong> Microsoft Word, Google Docs, Canva</p>
+                    </div>
+                    <a href="work-paranubhuti.html" class="btn-small">See Work Samples →</a>
+                </div>
             </div>
             <div class="exp-card fade-in" style="transition-delay:0.15s">
-                <div class="exp-card-top">
-                    <div class="exp-dot"></div>
-                    <span class="exp-org">Kshitiksha Foundation</span>
+                <div class="exp-card-toggle" onclick="toggleExpCard(this)">
+                    <div class="exp-card-top">
+                        <div class="exp-dot"></div>
+                        <span class="exp-org">Kshitiksha Foundation</span>
+                    </div>
+                    <div class="exp-role">Content Writing & Marketing Intern</div>
+                    <p class="exp-desc" style="margin-bottom: 0;">Created social media content focused on mental health,
+                        sustainability, and social awareness. Conducted audience research to support impactful
+                        storytelling and campaign messaging.</p>
+                    <p style="font-size: 11px; color: var(--terracotta); margin-top: 12px; font-weight: 500;">CLICK TO
+                        EXPAND/COLLAPSE ↕</p>
                 </div>
-                <div class="exp-role">Content Writing & Marketing Intern</div>
-                <p class="exp-desc">Created social media content focused on mental health, sustainability, and social
-                    awareness. Conducted audience research to support impactful storytelling and campaign messaging.</p>
+                <div class="exp-details">
+                    <div class="exp-detail-section">
+                        <p class="exp-detail-title">Basic Information</p>
+                        <p class="exp-detail-text"><strong>Time Period:</strong> May 2025 – June 2025<br><strong>Mode of
+                                Work:</strong> Remote</p>
+                    </div>
+                    <div class="exp-detail-section">
+                        <p class="exp-detail-title">Organization Context</p>
+                        <p class="exp-detail-text">Kshitiksha Foundation is an ISO-certified Section 8 nonprofit
+                            organization founded in 2021 in Greater Noida, India, working to create positive social
+                            impact through community-driven initiatives. The organization focuses on areas such as
+                            environmental conservation, stray animal welfare, education, and women’s empowerment,
+                            engaging volunteers and youth in awareness campaigns and initiatives that promote
+                            sustainability, compassion, and responsible community participation.</p>
+                    </div>
+                    <div class="exp-detail-section">
+                        <p class="exp-detail-title">Role Overview</p>
+                        <p class="exp-detail-text">As a Content Writing & Marketing Intern, I created awareness-focused
+                            content addressing topics such as mental health, environmental sustainability, and animal
+                            welfare. My work involved developing informative and engaging written material designed to
+                            encourage responsible behavior, promote social initiatives, and increase awareness of
+                            community issues.</p>
+                    </div>
+                    <div class="exp-detail-section">
+                        <p class="exp-detail-title">Key Contributions</p>
+                        <div class="exp-detail-text">
+                            <ul>
+                                <li>Created awareness content addressing topics such as mental health, environmental
+                                    sustainability, and animal welfare.</li>
+                                <li>Developed educational articles and campaign messaging designed to promote
+                                    compassionate and socially responsible behavior.</li>
+                                <li>Contributed written content supporting the organization’s awareness initiatives and
+                                    community engagement efforts.</li>
+                                <li>Produced digital content communicating social issues in an accessible and relatable
+                                    manner.</li>
+                                <li>Promoted environmental awareness initiatives encouraging actions such as tree
+                                    planting and sustainable practices.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="exp-detail-section">
+                        <p class="exp-detail-title">Skills & Tools</p>
+                        <p class="exp-detail-text"><strong>Skills:</strong> Content Writing, Awareness Campaign
+                            Communication, Social Impact Communication, Research-Based Writing,
+                            Editing<br><strong>Tools:</strong> Canva, Microsoft Word, Google Docs</p>
+                    </div>
+                    <a href="work-kshitiksha.html" class="btn-small">See Work Samples →</a>
+                </div>
             </div>
             <div class="exp-card fade-in" style="transition-delay:0.2s">
-                <div class="exp-card-top">
-                    <div class="exp-dot"></div>
-                    <span class="exp-org">InAmigos Foundation</span>
+                <div class="exp-card-toggle" onclick="toggleExpCard(this)">
+                    <div class="exp-card-top">
+                        <div class="exp-dot"></div>
+                        <span class="exp-org">InAmigos Foundation</span>
+                    </div>
+                    <div class="exp-role">Copywriter Intern</div>
+                    <p class="exp-desc" style="margin-bottom: 0;">Developed articles and social media content for
+                        awareness campaigns. Conducted background research and refined messaging for clarity and
+                        engagement across digital platforms.</p>
+                    <p style="font-size: 11px; color: var(--terracotta); margin-top: 12px; font-weight: 500;">CLICK TO
+                        EXPAND/COLLAPSE ↕</p>
                 </div>
-                <div class="exp-role">Copywriter Intern</div>
-                <p class="exp-desc">Developed articles and social media content for awareness campaigns. Conducted
-                    background research and refined messaging for clarity and engagement across digital platforms.</p>
+                <div class="exp-details">
+                    <div class="exp-detail-section">
+                        <p class="exp-detail-title">Basic Information</p>
+                        <p class="exp-detail-text"><strong>Time Period:</strong> June 2025<br><strong>Mode of
+                                Work:</strong> Remote</p>
+                    </div>
+                    <div class="exp-detail-section">
+                        <p class="exp-detail-title">Organization Context</p>
+                        <p class="exp-detail-text">InAmigos Foundation is a Section 8 registered nonprofit organization
+                            founded in 2020 in Bilaspur, Chhattisgarh, working to create positive social impact through
+                            community-driven initiatives. The foundation focuses on areas such as animal welfare,
+                            environmental sustainability, education, and social empowerment, engaging volunteers and
+                            communities across India to support these causes.</p>
+                    </div>
+                    <div class="exp-detail-section">
+                        <p class="exp-detail-title">Role Overview</p>
+                        <p class="exp-detail-text">As a Copywriting Intern, I created research-based articles, campaign
+                            content, and social media messaging for awareness initiatives. My work focused on
+                            translating complex social and environmental topics into engaging and accessible content for
+                            digital platforms while supporting the foundation’s communication and outreach efforts.</p>
+                    </div>
+                    <div class="exp-detail-section">
+                        <p class="exp-detail-title">Key Contributions</p>
+                        <div class="exp-detail-text">
+                            <ul>
+                                <li>Researched and wrote long-form articles on animal welfare and community initiatives.
+                                </li>
+                                <li>Developed awareness content for the Project Jeev campaign, promoting the importance
+                                    of feeding and caring for stray animals.</li>
+                                <li>Created social media copy and awareness posts to communicate campaign messages
+                                    effectively.</li>
+                                <li>Structured written content to align with nonprofit communication goals and audience
+                                    engagement strategies.</li>
+                                <li>Contributed content published on platforms such as Facebook and X (Twitter).</li>
+                                <li>Adapted long-form written content into concise social media messaging.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="exp-detail-section">
+                        <p class="exp-detail-title">Skills & Tools</p>
+                        <p class="exp-detail-text"><strong>Skills:</strong> Content Writing, Copywriting, Research-Based
+                            Writing, Social Impact Communication, Editing<br><strong>Tools:</strong> Canva, Microsoft
+                            Word, Google Docs, Social Media Platforms</p>
+                    </div>
+                    <a href="work-inamigos.html" class="btn-small">See Work Samples →</a>
+                </div>
             </div>
         </div>
     </section>
@@ -985,7 +1269,7 @@
     <!-- PROJECTS -->
     <section class="projects-section" id="projects">
         <div class="projects-header fade-in">
-            <p class="section-label">03 — Featured Work</p>
+            <p class="section-label">02 — Featured Work</p>
             <h2 class="projects-title">Selected Projects</h2>
             <p class="projects-sub">Selected projects showcasing my work in marketing strategy, audience research, and
                 digital communication.</p>
@@ -994,7 +1278,7 @@
         <div class="projects-grid">
 
             <!-- Card 1 -->
-            <div class="project-card fade-in" style="transition-delay:0.05s">
+            <a href="case-study-ecohaven.html" class="project-card fade-in" style="transition-delay:0.05s">
                 <div class="folder-visual">
                     <div class="folder-icon">
                         <div class="folder-tab"></div>
@@ -1007,11 +1291,12 @@
                     <p class="project-desc">Developed a full-funnel marketing strategy for a vegan apparel brand
                         including customer personas, social listening insights, competitor benchmarking, and pricing
                         recommendations.</p>
+                    <span class="btn-small" style="margin-top: 16px;">View Case Study</span>
                 </div>
-            </div>
+            </a>
 
             <!-- Card 2 -->
-            <div class="project-card fade-in" style="transition-delay:0.1s">
+            <a href="case-study-gopro.html" class="project-card fade-in" style="transition-delay:0.1s">
                 <div class="folder-visual">
                     <div class="folder-icon">
                         <div class="folder-tab"></div>
@@ -1023,11 +1308,12 @@
                     <div class="project-title">GoPro × L'Oréal Brand Collaboration</div>
                     <p class="project-desc">Designed a hypothetical brand collaboration including product positioning,
                         pricing strategy, packaging concepts, and marketing strategy using the AIDA model.</p>
+                    <span class="btn-small" style="margin-top: 16px;">View Case Study</span>
                 </div>
-            </div>
+            </a>
 
             <!-- Card 3 -->
-            <div class="project-card fade-in" style="transition-delay:0.15s">
+            <a href="case-study-folee.html" class="project-card fade-in" style="transition-delay:0.15s">
                 <div class="folder-visual">
                     <div class="folder-icon">
                         <div class="folder-tab"></div>
@@ -1040,11 +1326,12 @@
                     <p class="project-desc">Conceptualized a premium dessert brand and created a 12-month integrated
                         marketing communications plan including digital campaigns, influencer collaborations, and
                         experiential activations.</p>
+                    <span class="btn-small" style="margin-top: 16px;">View Case Study</span>
                 </div>
-            </div>
+            </a>
 
             <!-- Card 4 -->
-            <div class="project-card fade-in" style="transition-delay:0.2s">
+            <a href="case-study-actor-prepares.html" class="project-card fade-in" style="transition-delay:0.2s">
                 <div class="folder-visual">
                     <div class="folder-icon">
                         <div class="folder-tab"></div>
@@ -1056,8 +1343,9 @@
                     <div class="project-title">Actor Prepares — Social Media Analysis</div>
                     <p class="project-desc">Conducted a case study analyzing the digital presence of Actor Prepares
                         using social listening tools and competitive benchmarking to assess engagement and strategy.</p>
+                    <span class="btn-small" style="margin-top: 16px;">View Case Study</span>
                 </div>
-            </div>
+            </a>
 
         </div>
     </section>
@@ -1065,7 +1353,7 @@
     <!-- CERTIFICATIONS -->
     <section class="certs-section" id="certifications">
         <div class="certs-header fade-in">
-            <p class="section-label">04 — Certifications</p>
+            <p class="section-label">03 — Certifications</p>
             <h2 class="certs-title">Credentials & Learning</h2>
         </div>
         <div class="certs-list">
@@ -1109,10 +1397,10 @@
     <section class="contact-section" id="contact">
         <div class="contact-grid">
             <div class="contact-left fade-in">
-                <p class="section-label">05 — Contact</p>
+                <p class="section-label">04 — Contact</p>
                 <h2 class="contact-title">Let's Connect</h2>
-                <p class="contact-text">Interested in collaborating or discussing marketing and communication projects?
-                    Feel free to connect with me.</p>
+                <p class="contact-text">I’m always open to learning opportunities, internships, and conversations around
+                    marketing and communications. Feel free to reach out.</p>
             </div>
             <div class="contact-right fade-in" style="transition-delay:0.1s">
                 <div class="contact-items">
@@ -1152,8 +1440,10 @@
         <div class="footer-right">
             <nav class="footer-nav">
                 <a href="#home">Home</a>
+                <a href="about.html">About</a>
+                <a href="#experience">Experience</a>
                 <a href="#projects">Projects</a>
-                <a href="#contact">Contact me</a>
+                <a href="#contact">Contact</a>
             </nav>
         </div>
     </footer>
@@ -1190,10 +1480,32 @@
                 if (window.scrollY >= s.offsetTop - 100) current = s.id;
             });
             navLinks.forEach(a => {
-                a.classList.remove('active');
-                if (a.getAttribute('href') === '#' + current) a.classList.add('active');
+                // simple hack, only process on index page anchors
+                if (a.getAttribute('href').startsWith('#')) {
+                    a.classList.remove('active');
+                    if (a.getAttribute('href') === '#' + current) a.classList.add('active');
+                }
             });
         });
+
+        // Expand/Collapse Experience Cards
+        function toggleExpCard(element) {
+            const card = element.parentElement;
+            // close any open ones
+            document.querySelectorAll('.exp-card').forEach(c => {
+                if (c !== card) c.classList.remove('expanded');
+            });
+            // toggle this one
+            card.classList.toggle('expanded');
+
+            // tiny scroll offset if opening so we can see the title cleanly
+            if (card.classList.contains('expanded')) {
+                setTimeout(() => {
+                    const offset = card.getBoundingClientRect().top + window.scrollY - 100;
+                    window.scrollTo({ top: offset, behavior: 'smooth' });
+                }, 300);
+            }
+        }
     </script>
 
 </body>

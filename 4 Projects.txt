@@ -1,0 +1,301 @@
+Projects / Case Studies Page Structure (Website Instruction)
+The Projects / Case Studies section should be structured similarly to the Experience page but designed as marketing case studies. When a user clicks on “Projects / Case Studies” in the header, they should be directed to a page displaying four project cards: ECOHAVEN — Digital Marketing Strategy, GoPro × L'Oréal Brand Collaboration, Folée Cupcake Brand — Media Planning, and Actor Prepares — Social Media Analysis.
+Each card should display the project title and a short one-line description, along with a “View Case Study” button.
+When a user clicks on a project card, it should open a separate case study page containing the full project details. Each case study page should be organized into clearly structured sections including Project Overview, Objective, Research Insights, Strategy, and Key Outcome. At the end of the page, there should be a “View Full Project” button that links to the complete project document or presentation (Google Drive link).
+This structure allows visitors to quickly browse projects while also exploring detailed case studies for each project when needed.
+Projects / Case Studies Page 
+ECOHAVEN - Digital Marketing Strategy
+Description Developed a digital marketing strategy for a sustainable lifestyle brand, focusing on audience targeting, platform strategy, and content planning to build awareness around eco-friendly living.
+Context Academic Marketing Strategy Project
+Button View Case Study
+
+GoPro × L'Oréal - Brand Collaboration Strategy
+Description Conceptualized a cross-industry brand collaboration between GoPro and L'Oréal, exploring how experiential storytelling and beauty content could intersect to reach new audience segments.
+Context Brand Strategy / Marketing Project
+Button View Case Study
+
+Folée Cupcake Brand - Media Planning
+Description Designed a media planning strategy for a dessert brand, identifying target audiences, selecting appropriate media channels, and structuring a promotional campaign.
+Context Media Planning Project
+Button View Case Study
+
+Actor Prepares - Social Media Analysis
+Description Conducted a social media performance analysis of Actor Prepares, evaluating content strategy, audience engagement patterns, and platform effectiveness.
+Context Social Media Analysis Project
+Button View Case Study
+Example Layout
+Projects Page
+Card
+Card
+ECOHAVEN
+GoPro × L'Oréal
+Folée Cupcake
+Actor Prepares
+
+WHAT COMES WHEN CARDS ARE OPENED: 
+ECOHAVEN — Digital Content Marketing Strategy
+Project Overview
+ECOHAVEN is a semester-long digital marketing project focused on developing a strategic communication and content marketing plan for a hypothetical vegan and sustainable fashion brand. The project explored how eco-conscious clothing brands can attract, engage, and retain digital audiences through structured content strategies and social media marketing.
+The project was executed in three phases, combining brand strategy development, audience research, social media listening, and practical digital marketing execution.
+The goal was to demonstrate how a sustainability-focused fashion brand could build a strong digital presence while addressing key consumer concerns around ethical fashion, affordability, and transparency.
+📄 View Full Project
+
+Objective
+The project aimed to:
+• Develop a digital marketing strategy for a vegan and sustainable clothing brand • Identify key audience segments interested in ethical fashion • Understand online conversations around sustainable clothing brands • Design content strategies across the TOFU–MOFU–BOFU marketing funnel • Execute selected strategies to demonstrate practical digital marketing implementation
+
+Phase 1 — Brand & Digital Strategy Development
+The first phase focused on building the brand foundation and digital positioning for ECOHAVEN.
+Key activities included:
+• Developing the brand concept for a minimalist vegan fashion label • Analyzing market opportunities for sustainable clothing in India • Conducting competitor research within the ethical fashion space • Designing a TOFU–MOFU–BOFU content marketing funnel • Planning digital strategies including Instagram content, Pinterest lookbooks, SEO blogs, and influencer collaborations
+This phase established ECOHAVEN’s positioning as an affordable, stylish, and transparent vegan fashion brand targeting conscious consumers.
+The brand identity emphasized minimal aesthetics, gender-neutral silhouettes, and plant-based fabrics such as organic cotton and hemp blends.
+
+Phase 2 — Audience Personas & Social Media Listening
+The second phase focused on understanding the target audience and analyzing online conversations around sustainable fashion.
+Audience Persona Development
+Three customer personas were created to represent ECOHAVEN’s potential audience segments:
+Ananya Nair — The Idealist A socially conscious college student interested in trendy yet affordable sustainable fashion.
+Riya Singh — The Rational Consumer A working professional seeking minimalist, high-quality clothing aligned with sustainability values.
+Kabir Mehta — The Explorer A sustainability-driven lifestyle enthusiast who prefers durable, ethically produced clothing.
+Each persona included insights such as:
+• Demographics and lifestyle • Motivations and sustainability values • Frustrations with existing fashion brands • Digital behavior and preferred platforms • Content preferences and purchase drivers
+These insights helped shape ECOHAVEN’s content and communication strategy.
+
+Social Media Listening
+Social listening was conducted using BrandMentions to analyze conversations around sustainable fashion brands.
+Keywords monitored included:
+• No Nasties clothing • B Label hemp clothing • vegan clothing India • sustainable fashion India • ethical clothing brands India
+Key insights revealed:
+• Instagram is the dominant platform for sustainable fashion conversations • Consumers strongly value ethical production and eco-friendly fabrics • Key concerns include pricing, trend relevance, and brand transparency
+These findings helped refine ECOHAVEN’s strategy to focus on affordable pricing, modern aesthetics, and transparent storytelling.
+
+Phase 3 — Strategy Execution
+The final phase involved implementing selected strategies from the marketing funnel to demonstrate practical digital marketing execution. From the strategies proposed in earlier phases, two strategies from each stage of the funnel (TOFU, MOFU, and BOFU) were selected for execution.
+This phase is currently in progress, with initial execution examples developed and additional content assets being created.
+
+TOFU — Awareness & Discovery
+Content designed to introduce ECOHAVEN to new audiences.
+Selected executions included:
+• Pinterest lookbook boards showcasing eco-friendly outfit inspiration and sustainable styling • Educational blog content explaining sustainable fabrics such as Tencel and hemp
+These strategies focus on visual discovery and educational content, helping the brand reach sustainability-conscious audiences.
+
+MOFU — Consideration & Trust
+Content designed to help audiences evaluate the brand and build trust.
+Selected executions included:
+• Fabric comparison content explaining sustainability differences between materials like hemp and cotton • Customer testimonial content demonstrating social proof and product experience
+These assets focus on product education and trust-building.
+
+BOFU — Retention & Advocacy
+Content designed to strengthen customer relationships and encourage brand advocacy.
+Selected executions included:
+• Post-purchase thank-you email concepts reinforcing the brand’s sustainability mission • Referral campaign concepts encouraging customers to promote the brand
+These strategies support customer retention and community-driven advocacy.
+
+Research Insights
+Key insights from the research process included:
+• Rising consumer awareness of sustainable and ethical fashion • Gen Z and young professionals emerging as key eco-conscious consumers • Instagram and Pinterest acting as major fashion discovery platforms • Consumers value sustainability but are concerned about pricing and trend relevance
+These insights helped position ECOHAVEN as a stylish yet accessible vegan fashion brand.
+
+Strategy
+The digital strategy focused on:
+• Educational content around sustainable fabrics and ethical fashion • Visual storytelling through Instagram and Pinterest • Community engagement through user-generated content • Transparent communication around sourcing and sustainability
+The strategy followed the TOFU–MOFU–BOFU marketing funnel, ensuring engagement across the full customer journey.
+
+Key Outcome
+The project resulted in a structured digital marketing strategy for a sustainable fashion brand, supported by audience research, competitor analysis, and practical content execution examples.
+By combining persona insights, social listening data, and funnel-based strategies, ECOHAVEN was positioned as a modern eco-conscious brand capable of connecting with sustainability-driven consumers online.
+
+Project Deliverables
+Brand Strategy Presentation - ECOHAVEN Brand concept, market opportunity, competitor analysis, and TOFU–MOFU–BOFU digital marketing strategy. Button: View Strategy Presentation https://drive.google.com/file/d/1Wl9wwdn2ZXdPdinP-BLBoDnrPqSap_UA/view?usp=drive_link
+Audience Persona & Social Listening Analysis Customer personas and social media listening insights used to shape ECOHAVEN’s digital communication strategy. Button: View Research https://drive.google.com/file/d/1M8SbYAR_kzEarf4DLOkIA63x-4OF3AgE/view?usp=drive_link
+Pinterest Lookbook — ECOHAVEN Visual Direction Visual moodboard exploring sustainable fashion aesthetics, styling inspiration, and brand visual identity. Button: View Pinterest Board https://pin.it/3lwmERMDV
+ECOHAVEN Website Prototype Prototype website demonstrating how the brand strategy translates into a functional digital brand experience. Button: Visit Website https://ecohaven-rho.vercel.app/4
+GoPro × L’Oréal — Action-Proof Makeup
+Consumer Behaviour & Market Strategy Case Study
+Project Overview
+This project explored a hypothetical collaboration between GoPro and L’Oréal to design an Action-Proof Makeup Line for women with active lifestyles.
+The study combined market analysis, consumer behaviour research, product concept development, and marketing strategy design to understand how beauty products can perform under real-life conditions such as heat, sweat, travel, and outdoor activities.
+A key component of the project was primary consumer research through qualitative interviews, where insights from different age groups were analysed to understand attitudes toward long-lasting, performance-based beauty products. 
+Interview (12 people)
+The concept positioned makeup not just as a beauty product, but as a functional lifestyle tool for modern women balancing work, fitness, travel, and content creation.
+
+Objective
+The project aimed to:
+• Study consumer behaviour in the beauty industry, particularly among women with active lifestyles • Explore the market potential of performance-based makeup products • Conduct primary consumer research through interviews across different age groups • Analyse behavioural motivations influencing beauty purchasing decisions • Develop a product concept and marketing strategy aligned with modern lifestyle trends
+
+Market & Consumer Analysis
+Market research revealed a growing demand for long-lasting, sweat-resistant, and travel-friendly beauty products, especially among women who engage in fitness, outdoor activities, and digital content creation.
+Key market observations included:
+• Rise of “active beauty” and performance-based cosmetics • Increasing participation of women in travel, fitness, and outdoor activities • Social media and content creation influencing beauty consumption • Demand for compact, multifunctional products suitable for busy lifestyles
+Consumers increasingly expect makeup to perform in real-life conditions rather than controlled studio environments. 
+Market Analysis
+
+Primary Research — Consumer Interviews
+A major component of the project involved qualitative consumer interviews.
+Sample size: 12 respondents Age groups studied:
+• 16–22 (Gen Z students) • 23–30 (young professionals) • 31–40 (working professionals)
+The interviews explored:
+• Consumer reactions to the GoPro × L’Oréal collaboration concept • Interest in sweat-proof and action-tested makeup • Lifestyle compatibility with travel, fitness, and outdoor activities • Concerns around price, ingredients, and durability claims
+Each respondent’s responses were analysed individually to identify behavioural patterns across age groups and lifestyles. 
+Interview (12 people)
+
+Consumer Behaviour Insights
+Analysis of the interviews revealed several key behavioural insights:
+Functional Motivation
+Consumers prefer products that stay intact during heat, sweat, and long days, reducing the need for frequent touch-ups.
+Emotional Motivation
+Performance-based makeup increases confidence in social situations, travel environments, and content creation scenarios.
+Social Influence
+Beauty influencers, peer recommendations, and real-life performance tests significantly impact purchase decisions.
+Lifestyle Fit
+Women with active routines prefer compact, travel-friendly products that combine convenience with durability.
+These findings confirmed that modern consumers view beauty products as practical lifestyle tools rather than purely aesthetic products. 
+Consumer Ethnography, Motivatio…
+
+Product Concept
+The project proposed an Action-Proof Makeup Collection designed specifically for real-world conditions.
+Key Product Ideas
+• Sweat-Proof Foundation Stick • Waterproof Tint Stick • Humidity-Proof Compact • All-Day Setting Spray • Travel Mini Kit
+The concept focused on:
+• Durability during heat, sweat, and movement • Compact travel-friendly packaging • Multi-functional products suitable for active lifestyles
+The product concept emphasized performance testing in real-life scenarios such as gyms, travel environments, and outdoor activities.
+
+Logo Concept
+As part of the project, I designed the collaboration logo concept representing the partnership between GoPro and L’Oréal.
+The logo combines:
+• GoPro’s action camera symbolism • L’Oréal’s beauty identity • Visual elements representing motion, creativity, and performance
+The design reflects the idea of “Action-Proof Beauty” — makeup that performs reliably during dynamic, real-life situations. 
+Logo of the Collaboration 1
+
+Marketing Strategy
+The marketing strategy focused on positioning the product at the intersection of beauty, performance, and lifestyle culture.
+Fitness Culture Marketing
+• Sweat-test challenges • Gym collaborations • Athlete endorsements
+Travel & Adventure Marketing
+• Outdoor beauty testing content • Travel creator partnerships • Airport and travel retail pop-ups
+Creator Economy Marketing
+• GRWM outdoor content • POV beauty testing videos • Creator-friendly travel beauty kits
+The strategy connects the product with modern lifestyle narratives rather than traditional beauty advertising.
+
+Key Outcome
+The project demonstrated strong potential for a performance-based cosmetics category designed for modern active lifestyles.
+Consumer interviews showed clear interest in products that combine:
+• durability • portability • real-life performance • lifestyle compatibility
+The study concluded that Action-Proof Beauty could represent a growing niche in the cosmetics industry, especially among active women and digital content creators.
+Folée — Integrated Media Planning & Brand Strategy Case Study
+Project Overview
+Folée is a hypothetical Paris-inspired cupcake brand developed as a brand strategy and integrated media planning project.
+The project focused on creating a premium yet accessible dessert brand designed for urban Gen Z and Millennial consumers who value aesthetic food experiences and social media culture.
+The work included brand concept development, product design, packaging strategy, and a 12-month Integrated Marketing Communication (IMC) plan combining digital marketing, print advertising, and experiential activations. 
+Folee
+
+Objective
+The project aimed to:
+• Develop a go-to-market strategy for a new dessert brand • Position Folée as an affordable luxury cupcake brand inspired by Parisian pâtisserie culture • Identify and target urban Gen Z and Millennial consumers (16–30) • Design a 12-month integrated media strategy combining digital, print, and on-ground marketing • Build a strong visual brand identity and packaging system
+
+Brand Concept
+Folée was positioned as “A Bite of Paris in Every Swirl” — a dessert brand combining French pâtisserie inspiration with modern social-media aesthetics. 
+Folee
+The brand focused on:
+• Instagram-friendly presentation • Boutique gift-ready packaging • French-inspired artisanal flavours • Affordable luxury positioning
+This concept aimed to make premium dessert experiences accessible to young urban consumers.
+
+Product & Packaging Strategy
+The product line included six French-inspired cupcake flavours, such as:
+• Crème de Vanille • Chocolat Noir • Fraise Rosé • Citron Meringue • Pistache Parisienne • Café Mocha 
+Folee
+Packaging was designed using pastel aesthetics, vintage floral elements, and eco-friendly matte cardboard, reinforcing the brand’s premium and gift-ready identity.
+Each box included:
+• Folée branding and ribbon seal • ingredient and nutrition details • recyclable packaging indicators • boutique dessert presentation style
+This packaging strategy supported visual storytelling and social media shareability.
+
+Target Market
+The brand targeted urban Gen Z and Millennial consumers aged 16–30, particularly in cities with strong café culture such as:
+• Bangalore • Chennai • Coimbatore • Kochi 
+Folee
+Key consumer segments included:
+• Food explorers • Gifting buyers • Self-care indulgence seekers • Seasonal celebration shoppers
+These consumers are heavily influenced by visual food trends and social media discovery.
+
+Integrated Media Strategy
+The marketing strategy combined digital, print, and out-of-home channels to maximize brand visibility and engagement.
+Digital Marketing
+• Instagram Reels and aesthetic dessert content • Influencer reviews and unboxing videos • Google Ads targeting dessert searches • SEO for “gourmet cupcakes” • Brand website with Cupcake Club loyalty program
+Print Media
+• Features in lifestyle magazines such as FEMINA, Grazia, Cosmopolitan India, MetroPlus, and Times Life. 
+Folee
+Out-of-Home Marketing
+• Mall standees • Café QR posters • College festival booths
+Promotional mechanics included:
+• Buy 2 Get 1 Free launch offer • Cupcake Club loyalty program • Golden Ticket surprise rewards • Seasonal flavour drops
+
+Experiential Marketing Strategy
+To build trial and brand awareness, the strategy included offline engagement initiatives such as:
+• Campus and café sampling drives • Pop-up kiosks in malls • QR-based customer feedback collection • influencer mystery box campaigns
+These activations were designed to generate user-generated content and first-time product trials. 
+Folee
+
+12-Month Media Planning
+A year-long campaign calendar was developed to maintain consistent brand visibility and engagement.
+Campaign themes included:
+• Launch campaign — #FoleeFirstBite • Valentine’s gifting campaign • Spring flavour drops • Summer Mango Fleur launch • Monsoon seasonal boxes • Paris Café Collection campaign • Diwali festive gifting boxes • Holiday dessert bundles
+Each campaign included defined KPIs such as reach, website visits, UGC posts, and conversion metrics. 
+Folee Monthly Media Planner
+
+Key Outcome
+The project resulted in a complete brand launch framework for a dessert startup, including:
+• brand positioning strategy • product concept and flavour development • packaging design system • integrated marketing communication plan • detailed 12-month media calendar
+The strategy demonstrated how a dessert brand can differentiate itself through visual storytelling, seasonal campaigns, and experiential marketing targeting young urban consumers.
+Project Deliverables
+Brand Strategy & Media Plan Presentation — Folée Brand concept, target audience, competitor analysis, and integrated marketing strategy for launching the Folée cupcake brand. Button: View Presentation https://drive.google.com/file/d/1jbi339yYDUYrQPyBGFxWoPMaqkRd0TpE/view?usp=drive_link
+
+12-Month Integrated Media Planner — Folée Campaign calendar outlining seasonal promotions, platform strategy, and key marketing activities across the year. Button: View Media Plan https://drive.google.com/file/d/1E0mSbnJzen4kCOPd50Tj8VXWrMtSxZ4R/view?usp=drive_link
+
+Product Packaging Design — Folée (Front View) Front packaging design reflecting the brand’s Paris-inspired visual identity and premium dessert positioning. Button: View Packaging Design https://drive.google.com/file/d/18CdeRfkPuilyij8sH6M-L3dlMUtn4hzP/view?usp=drive_link
+
+Product Packaging Design — Folée (Back View) Back packaging layout including product details, ingredient information, and branding elements. Button: View Packaging Design https://drive.google.com/file/d/1gcId8N8mQpj_Vhdi3qbYtvxo0cQri-Op/view?usp=drive_link
+Social Media Case Study & Brand Analytics — Actor Prepares Academy
+Project Overview
+This project involved a real-world case study analyzing the social media strategy and digital presence of Actor Prepares Academy. The study combined primary research, social listening analytics, and competitor benchmarking to understand how performing arts institutions manage their digital communication and audience engagement.
+The project examined online mentions, sentiment trends, engagement patterns, and brand positioning, while also incorporating expert insights from a former Social Media Manager of the academy.
+
+Objective
+The project aimed to:
+• Analyze Actor Prepares’ social media presence and audience engagement patterns • Understand how performing arts institutions manage digital communication • Conduct a 365-day social listening analysis to study brand mentions and sentiment • Compare Actor Prepares with a competitor institution to evaluate digital visibility • Generate strategic insights that could improve the academy’s digital marketing approach
+
+Research & Analysis
+Primary Research — Industry Interview
+As part of the study, I conducted an in-depth interview with Isha Ingle, former Social Media Manager at Actor Prepares, to understand real-world social media management practices.
+The discussion explored topics such as:
+• Content strategy and engagement techniques • Role of trends, Reels, and interactive content • Audience behaviour and response patterns • Planning workflows and collaboration with creative teams
+The interview revealed that short-form video content, interactive posts, and emotion-driven storytelling tend to generate the strongest engagement for performing arts institutions. 
+Interview Transcript
+
+Social Listening Analysis
+Using Brand24, I conducted a 365-day digital listening analysis to examine online conversations around Actor Prepares.
+Key metrics identified:
+• 65 total brand mentions across online platforms • 48K social media reach and 691K non-social reach • 9 positive mentions and 1 negative mention, indicating strong brand sentiment • 31 pieces of user-generated content related to the academy
+These insights helped evaluate the academy’s digital visibility and audience engagement patterns. 
+Brand24 Analysis
+
+Competitor Benchmarking
+A comparative media analysis was conducted between Actor Prepares and the National School of Drama to understand relative digital presence.
+The analysis compared metrics such as:
+• total mentions • reach and engagement • sentiment • user-generated content
+The comparison showed that while Actor Prepares has strong brand sentiment, National School of Drama generates significantly higher online mentions and reach, highlighting opportunities for improved digital visibility. 
+Comparison Table pdf
+
+Key Insights
+• Interactive content and short-form video significantly increase audience engagement. • Emotional storytelling and behind-the-scenes content resonate strongly with creative audiences. • Social listening data can reveal visibility gaps compared to competing institutions. • A mix of organic content and paid campaigns is necessary for sustained digital growth.
+
+Key Outcome
+The project demonstrated how social listening analytics, primary research interviews, and competitor benchmarking can be combined to evaluate and improve an organization’s digital communication strategy.
+The insights generated from this study provide actionable directions for strengthening content strategy, engagement techniques, and digital positioning for performing arts institutions.
+
+Project Deliverables (Buttons Section)
+Social Listening Analysis Report — Brand24 365-day analysis of online mentions, sentiment, reach, and engagement trends related to Actor Prepares. Button: View Analytics Report https://drive.google.com/file/d/1MWj-qFn9AjQYypSObQXj3BPB1YsR9cae/view?usp=drive_link
+Competitor Benchmarking — Actor Prepares vs National School of Drama Comparative media analysis evaluating digital presence and engagement metrics across both institutions. Button: View Comparative Analysis https://drive.google.com/file/d/1JId7MGN1oPnKFqhRd6appUSy86fWNXJc/view?usp=drive_link
+
+Industry Interview — Former Social Media Manager (Actor Prepares) Full interview transcript providing insider insights into real-world social media strategy and audience engagement practices. Button: View Interview Transcript https://drive.google.com/file/d/19sO7_EkjywqV23QeOA0AlRFuvZVXJHQX/view?usp=drive_link
+
