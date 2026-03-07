@@ -1049,3 +1049,323 @@ nav {
     background: var(--terracotta);
     border-radius: 2px;
 }
+
+/* --- CUSTOM CURSOR --- */
+body {
+    cursor: none; /* Hide default cursor */
+}
+
+a, button, .project-card, .exp-card-toggle, input, textarea, select {
+    cursor: none !important; /* Hide pointer cursor on interactables */
+}
+
+/* Base custom cursor dot */
+.custom-cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-color: var(--terracotta);
+    border-radius: 50%;
+    pointer-events: none; /* Let clicks pass through */
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    transition: transform 0.15s ease-out, background-color 0.2s, width 0.2s, height 0.2s, opacity 0.2s;
+    mix-blend-mode: difference;
+    opacity: 0.8;
+}
+
+/* Hover state for interactable elements */
+.custom-cursor.hovering {
+    width: 60px;
+    height: 60px;
+    background-color: var(--terracotta-light);
+    opacity: 0.5;
+    mix-blend-mode: difference;
+}
+
+/* --- DARK MODE VARIABLES --- */
+html[data-theme='dark'] {
+    --cream: #1a1817;      /* Very dark brown/black */
+    --blush: #262221;      /* Slightly lighter dark */
+    --terracotta: #d47e6b; /* Lighter, more pastel terracotta for contrast */
+    --terracotta-light: #e69d8e;
+    --charcoal: #faf5f0;   /* Light text */
+    --muted: #a89d97;      /* Muted light text */
+    --card-bg: #2a2523;    
+    --card-border: #3d3532;
+    --folder-pink: #9e5b50;
+}
+
+/* Dark mode specific overrides */
+html[data-theme='dark'] nav {
+    background: rgba(26, 24, 23, 0.85) !important;
+}
+
+html[data-theme='dark'] .hero-photo-placeholder::after {
+    background: linear-gradient(135deg, var(--card-bg) 0%, var(--card-border) 100%);
+}
+
+html[data-theme='dark'] .project-info, 
+html[data-theme='dark'] .exp-card-toggle {
+    background: var(--cream);
+}
+html[data-theme='dark'] .project-card:hover .project-info, 
+html[data-theme='dark'] .exp-card:hover .exp-card-toggle {
+    background: var(--blush);
+}
+html[data-theme='dark'] .project-card::before, 
+html[data-theme='dark'] .exp-card::before {
+    background: var(--cream);
+}
+html[data-theme='dark'] .project-card:hover::before,
+html[data-theme='dark'] .exp-card:hover::before {
+    background: var(--blush);
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+    background: none;
+    border: none;
+    cursor: none !important;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: var(--charcoal);
+    transition: background 0.2s;
+    padding: 0;
+    margin-left: 20px;
+}
+
+.theme-toggle:hover {
+    background: var(--card-border);
+}
+
+/* Expand nav area slightly */
+.nav-links {
+    align-items: center;
+}
+
+/* --- SKILLS MARQUEE --- */
+.marquee-wrapper {
+    width: 100%;
+    overflow: hidden;
+    background: var(--terracotta);
+    padding: 24px 0;
+    display: flex;
+    white-space: nowrap;
+    position: relative;
+    z-index: 10;
+}
+
+.marquee-content {
+    display: flex;
+    animation: marquee 30s linear infinite;
+    gap: 40px;
+}
+
+.marquee-item {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* --- CASE STUDY IMAGE GALLERY --- */
+.gallery-section {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 5%;
+}
+
+.gallery-title {
+    font-family: 'Cormorant Garamond', serif; 
+    font-size: 32px; 
+    font-weight: 500; 
+    color: var(--terracotta); 
+    margin-bottom: 32px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-rows: 250px;
+    gap: 24px;
+    grid-auto-flow: dense;
+}
+
+.gallery-item {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    background: var(--card-bg);
+}
+
+.gallery-item.tall {
+    grid-row: span 2;
+}
+
+.gallery-item.wide {
+    grid-column: span 2;
+}
+
+.gallery-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.gallery-item:hover .gallery-img {
+    transform: scale(1.05);
+}
+
+.gallery-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 24px 20px 20px;
+    background: linear-gradient(transparent, rgba(0,0,0,0.7));
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover .gallery-caption {
+    transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 200px;
+    }
+    .gallery-item.wide, .gallery-item.tall {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+}
+
+/* --- RESUME MODAL --- */
+.resume-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(26, 24, 23, 0.4);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s ease;
+}
+
+.resume-modal.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.resume-modal-content {
+    background: var(--cream);
+    width: 90%;
+    max-width: 600px;
+    max-height: 85vh;
+    border-radius: 20px;
+    padding: 48px 40px;
+    border: 1px solid var(--card-border);
+    box-shadow: 0 40px 80px rgba(0,0,0,0.1);
+    transform: translateY(40px);
+    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    overflow-y: auto;
+    position: relative;
+    cursor: auto !important; /* Allow normal scrolling interaction */
+}
+
+.resume-modal.active .resume-modal-content {
+    transform: translateY(0);
+}
+
+.close-modal {
+    position: absolute;
+    top: 24px;
+    right: 32px;
+    background: none;
+    border: none;
+    font-size: 28px;
+    color: var(--muted);
+    cursor: pointer !important; /* Exemption from custom cursor for safety */
+    transition: color 0.2s;
+}
+
+.close-modal:hover {
+    color: var(--terracotta);
+}
+
+.resume-timeline {
+    margin: 32px 0;
+    padding-left: 20px;
+    border-left: 2px solid var(--card-border);
+}
+
+.resume-item {
+    position: relative;
+    margin-bottom: 32px;
+}
+
+.resume-item::before {
+    content: '';
+    position: absolute;
+    left: -27px;
+    top: 6px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--terracotta);
+    border: 3px solid var(--cream);
+}
+
+html[data-theme='dark'] .resume-item::before {
+    border-color: var(--card-bg);
+}
+
+.resume-item h4 {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--charcoal);
+    margin-bottom: 4px;
+}
+
+.resume-item p {
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 1.5;
+}

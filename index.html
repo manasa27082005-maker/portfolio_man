@@ -24,6 +24,7 @@
             <li><a href="experience.html">Experience</a></li>
             <li><a href="index.html#projects">Projects</a></li>
             <li><a href="index.html#contact">Contact</a></li>
+            <li><button id="theme-toggle-btn" class="theme-toggle" aria-label="Toggle Dark Mode">🌙</button></li>
         </ul>
     </nav>
 
@@ -43,7 +44,7 @@
             </p>
             <div class="hero-buttons">
                 <a href="#projects" class="btn-primary">View My Work →</a>
-                <a href="Manasa_Harikrishnan_Resume.pdf" target="_blank" class="btn-outline">Download Resume →</a>
+                <a href="#" id="open-resume" class="btn-outline">View Resume &rarr;</a>
             </div>
         </div>
         <div class="hero-image-wrap fade-in" style="transition-delay:0.15s">
@@ -51,6 +52,15 @@
                 <img src="image.png" alt="Manasa Harikrishnan" style="position: relative; z-index: 10;">
             </div>
         </div>
+    
+    <!-- SKILLS MARQUEE -->
+    <div class="marquee-wrapper fade-in">
+        <div class="marquee-content">
+            <span class="marquee-item">Digital Marketing ✦ Content Strategy ✦ Public Relations ✦ SEO ✦ Social Media Analysis ✦ Brand Positioning ✦ Email Marketing</span>
+            <span class="marquee-item">Digital Marketing ✦ Content Strategy ✦ Public Relations ✦ SEO ✦ Social Media Analysis ✦ Brand Positioning ✦ Email Marketing</span>
+        </div>
+    </div>
+
     </section>
 
     <!-- QUICK HIGHLIGHTS -->
@@ -265,6 +275,35 @@
         </div>
     </section>
 
+    
+    <!-- RESUME MODAL -->
+    <div class="resume-modal" id="resume-modal">
+        <div class="resume-modal-content">
+            <button class="close-modal" id="close-resume">&times;</button>
+            <h2 style="font-family: 'Cormorant Garamond', serif; font-size: 36px; color: var(--terracotta); margin-bottom: 8px;">Manasa Harikrishnan</h2>
+            <p style="color: var(--muted); font-size: 14px; margin-bottom: 8px;">Mass Communication Student & Content Strategist</p>
+            
+            <div class="resume-timeline">
+                <div class="resume-item">
+                    <h4>Content Strategy & PR Intern</h4>
+                    <p>Paranubhuti Foundation | Jan 2026 – Present</p>
+                </div>
+                <div class="resume-item">
+                    <h4>Communications Intern</h4>
+                    <p>Young Leaders India | Sept 2025</p>
+                </div>
+                <div class="resume-item">
+                    <h4>Copywriter Intern</h4>
+                    <p>InAmigos Foundation | June 2025</p>
+                </div>
+            </div>
+
+            <div style="margin-top: 32px; display: flex; gap: 16px;">
+                <a href="Manasa_Harikrishnan_Resume.pdf" target="_blank" class="btn-primary" style="flex: 1; text-align: center;">Download Full PDF Resume &darr;</a>
+            </div>
+        </div>
+    </div>
+
     <!-- FOOTER -->
     <footer>
         <div class="footer-left">
@@ -345,6 +384,95 @@
                 }, 300);
             }
         }
+    
+        // Resume Modal Logic
+        const resumeBtn = document.getElementById('open-resume');
+        const resumeModal = document.getElementById('resume-modal');
+        const closeResumeBtn = document.getElementById('close-resume');
+
+        if (resumeBtn && resumeModal) {
+            resumeBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                resumeModal.classList.add('active');
+            });
+
+            closeResumeBtn.addEventListener('click', () => {
+                resumeModal.classList.remove('active');
+            });
+
+            resumeModal.addEventListener('click', (e) => {
+                if (e.target === resumeModal) {
+                    resumeModal.classList.remove('active');
+                }
+            });
+        }
+
+    </script>
+
+
+    <!-- CUSTOM FEATURES SCRIPT -->
+    <div class="custom-cursor" id="custom-cursor"></div>
+    <script>
+        // Custom Cursor Logic
+        const cursor = document.getElementById('custom-cursor');
+        
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+        });
+
+        // Add hover effect to interactive elements
+        const interactables = document.querySelectorAll('a, button, .project-card, .exp-card-toggle, input, textarea');
+        interactables.forEach(el => {
+            el.addEventListener('mouseenter', () => cursor.classList.add('hovering'));
+            el.addEventListener('mouseleave', () => cursor.classList.remove('hovering'));
+        });
+
+        // Theme Toggle Logic
+        const themeBtn = document.getElementById('theme-toggle-btn');
+        if (themeBtn) {
+            themeBtn.addEventListener('click', () => {
+                const html = document.documentElement;
+                if (html.getAttribute('data-theme') === 'dark') {
+                    html.removeAttribute('data-theme');
+                    themeBtn.innerHTML = '🌙';
+                    localStorage.setItem('theme', 'light');
+                } else {
+                    html.setAttribute('data-theme', 'dark');
+                    themeBtn.innerHTML = '☀️';
+                    localStorage.setItem('theme', 'dark');
+                }
+            });
+
+            // Load saved theme
+            if (localStorage.getItem('theme') === 'dark') {
+                document.documentElement.setAttribute('data-theme', 'dark');
+                themeBtn.innerHTML = '☀️';
+            }
+        }
+    
+        // Resume Modal Logic
+        const resumeBtn = document.getElementById('open-resume');
+        const resumeModal = document.getElementById('resume-modal');
+        const closeResumeBtn = document.getElementById('close-resume');
+
+        if (resumeBtn && resumeModal) {
+            resumeBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                resumeModal.classList.add('active');
+            });
+
+            closeResumeBtn.addEventListener('click', () => {
+                resumeModal.classList.remove('active');
+            });
+
+            resumeModal.addEventListener('click', (e) => {
+                if (e.target === resumeModal) {
+                    resumeModal.classList.remove('active');
+                }
+            });
+        }
+
     </script>
 
 </body>

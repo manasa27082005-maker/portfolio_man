@@ -23,6 +23,7 @@
             <li><a href="experience.html">Experience</a></li>
             <li><a href="index.html#projects">Projects</a></li>
             <li><a href="index.html#contact">Contact</a></li>
+            <li><button id="theme-toggle-btn" class="theme-toggle" aria-label="Toggle Dark Mode">🌙</button></li>
         </ul>
     </nav>
 
@@ -236,6 +237,49 @@
                 if (a.getAttribute('href') === '#' + current) a.classList.add('active');
             });
         });
+    </script>
+
+
+    <!-- CUSTOM FEATURES SCRIPT -->
+    <div class="custom-cursor" id="custom-cursor"></div>
+    <script>
+        // Custom Cursor Logic
+        const cursor = document.getElementById('custom-cursor');
+        
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+        });
+
+        // Add hover effect to interactive elements
+        const interactables = document.querySelectorAll('a, button, .project-card, .exp-card-toggle, input, textarea');
+        interactables.forEach(el => {
+            el.addEventListener('mouseenter', () => cursor.classList.add('hovering'));
+            el.addEventListener('mouseleave', () => cursor.classList.remove('hovering'));
+        });
+
+        // Theme Toggle Logic
+        const themeBtn = document.getElementById('theme-toggle-btn');
+        if (themeBtn) {
+            themeBtn.addEventListener('click', () => {
+                const html = document.documentElement;
+                if (html.getAttribute('data-theme') === 'dark') {
+                    html.removeAttribute('data-theme');
+                    themeBtn.innerHTML = '🌙';
+                    localStorage.setItem('theme', 'light');
+                } else {
+                    html.setAttribute('data-theme', 'dark');
+                    themeBtn.innerHTML = '☀️';
+                    localStorage.setItem('theme', 'dark');
+                }
+            });
+
+            // Load saved theme
+            if (localStorage.getItem('theme') === 'dark') {
+                document.documentElement.setAttribute('data-theme', 'dark');
+                themeBtn.innerHTML = '☀️';
+            }
+        }
     </script>
 
 </body>
