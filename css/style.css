@@ -581,8 +581,16 @@ section {
     background: var(--blush);
 }
 
-.certs-header {
-    margin-bottom: 48px;
+/* Two-column wrapper */
+.certs-two-col {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+.certs-left {
+    flex: 0 0 38%;
+    max-width: 38%;
 }
 
 .certs-title {
@@ -590,43 +598,64 @@ section {
     font-size: 38px;
     font-weight: 400;
     color: var(--terracotta);
+    margin-bottom: 16px;
+}
+
+.certs-desc {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.8;
+    max-width: 320px;
+}
+
+.certs-right {
+    flex: 1;
 }
 
 .certs-list {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 16px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
 }
 
 .cert-item {
     background: var(--cream);
-    padding: 20px 24px;
+    padding: 18px 20px;
     border: 1px solid var(--card-border);
     display: flex;
     align-items: center;
     gap: 14px;
-    transition: transform 0.2s;
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-decoration: none;
+    color: inherit;
 }
 
 .cert-item:hover {
-    transform: translateX(4px);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(184, 92, 74, 0.1);
 }
 
 .cert-check {
-    width: 28px;
-    height: 28px;
-    background: var(--terracotta);
-    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    background: white;
+    border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
-    color: white;
-    font-size: 12px;
+    padding: 4px;
+    border: 1px solid var(--card-border);
+}
+
+.cert-check img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .cert-name {
-    font-size: 13.5px;
+    font-size: 13px;
     color: var(--charcoal);
     font-weight: 400;
     line-height: 1.4;
@@ -844,6 +873,16 @@ footer {
 
     .exp-grid {
         grid-template-columns: 1fr;
+    }
+
+    .certs-two-col {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .certs-left {
+        flex: 0 0 100%;
+        max-width: 100%;
     }
 
     .certs-list {
