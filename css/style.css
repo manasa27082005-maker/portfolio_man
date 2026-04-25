@@ -666,29 +666,28 @@ section {
 }
 
 .cert-name {
-    font-size: 15px;
+    font-size: 14px;
     color: var(--charcoal);
-    font-weight: 600;
+    font-weight: 400;
     line-height: 1.4;
     text-decoration: none;
 }
 
 .cert-issuer {
     font-size: 13px;
-    color: var(--terracotta);
-    font-weight: 500;
-    letter-spacing: 0.01em;
+    color: var(--muted);
+    font-weight: 300;
 }
 
 .cert-link {
     margin-top: 8px;
-    font-size: 12.5px;
+    font-size: 13px;
     color: var(--terracotta);
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 400;
     display: inline-flex;
     align-items: center;
-    gap: 6px;
+    gap: 4px;
     transition: all 0.2s ease;
     position: relative;
     z-index: 1;
