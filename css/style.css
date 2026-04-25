@@ -578,65 +578,60 @@ section {
 
 /* ── CERTIFICATIONS ── */
 .certs-section {
-    background: var(--blush);
+    background: var(--cream);
+    padding: 100px 60px;
 }
 
-.certs-layout-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 80px;
+.certs-container {
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
-.certs-left-content {
-    flex: 0 0 40%;
+.certs-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 38px;
+    font-weight: 400;
+    color: var(--terracotta);
+    margin-bottom: 60px;
 }
 
-.certs-description {
-    color: var(--muted);
-    font-size: 14px;
-    line-height: 1.8;
-    margin-top: 16px;
-    max-width: 380px;
-}
-
-.certs-list {
-    flex: 0 0 60%;
+.certs-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 48px 32px;
 }
 
 .cert-item {
-    background: var(--cream);
-    padding: 24px;
-    border: 1px solid var(--card-border);
+    text-decoration: none;
+    background: transparent;
+    border: none;
     display: flex;
     align-items: flex-start;
-    gap: 16px;
-    transition: transform 0.2s, box-shadow 0.2s;
-    border-radius: 8px;
+    gap: 20px;
+    transition: transform 0.3s ease;
+    border-radius: 0;
+    padding: 0;
 }
 
 .cert-item:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 24px rgba(184, 92, 74, 0.1);
+    transform: translateY(-2px);
 }
 
 .cert-check {
-    width: 44px;
-    height: 44px;
+    width: 32px;
+    height: 32px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
-    margin-top: 2px;
+    margin-top: 4px;
 }
 
 .cert-check img {
     width: 100%;
     height: 100%;
     object-fit: contain;
+    mix-blend-mode: multiply;
 }
 
 .cert-content {
@@ -644,58 +639,38 @@ section {
     flex-direction: column;
     gap: 4px;
     width: 100%;
+    justify-content: flex-start;
 }
 
 .cert-name {
-    font-size: 14px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 17px;
     color: var(--charcoal);
     font-weight: 500;
-    line-height: 1.4;
+    line-height: 1.3;
 }
 
 .cert-issuer {
-    font-size: 13px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 15px;
     color: var(--muted);
+    font-style: italic;
     font-weight: 400;
-}
-
-.cert-link {
-    margin-top: 6px;
-    font-size: 13px;
-    color: var(--terracotta);
-    text-decoration: none;
-    font-weight: 500;
-    display: inline-flex;
-    align-items: center;
-    gap: 4px;
-    transition: opacity 0.2s ease;
-}
-
-.cert-link:hover {
-    opacity: 0.8;
-}
-
-.cert-link svg {
-    transition: transform 0.2s ease;
-}
-
-.cert-link:hover svg {
-    transform: translateX(4px);
+    margin-top: 2px;
 }
 
 @media (max-width: 992px) {
-    .certs-layout-container {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 48px;
+    .certs-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
+}
 
-    .certs-left-content, .certs-list {
-        flex: 0 0 100%;
-        width: 100%;
+@media (max-width: 768px) {
+    .certs-section {
+        padding: 60px 32px;
     }
-
-    .certs-list {
+    
+    .certs-grid {
         grid-template-columns: 1fr;
     }
 }
