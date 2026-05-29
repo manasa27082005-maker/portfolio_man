@@ -1942,7 +1942,7 @@ html[data-theme='dark'] .expertise-module {
 
 /* Scroll Anim: Fade in staggered */
 .anim-bubble {
-    opacity: 0 !important;
+    opacity: 0;
     transform: translateY(20px);
     animation: none;
 }
@@ -1973,8 +1973,6 @@ html[data-theme='dark'] .expertise-module {
         transform-origin: top left;
         margin: 0;
     }
-}
-
     .expertise-right {
         justify-content: flex-start;
         height: 300px;
