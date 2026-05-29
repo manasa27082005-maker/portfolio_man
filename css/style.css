@@ -135,7 +135,7 @@ nav.scrolled {
     font-weight: 500;
     white-space: nowrap;
     margin-bottom: 32px;
-    
+    line-height: 1.2;
     opacity: 0;
     animation: h-fade 0.8s ease-out forwards;
 }
