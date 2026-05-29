@@ -241,142 +241,190 @@ section {
     font-weight: 300;
 }
 
-/* ── QUICK SNAPSHOT ── */
-.quick-snapshot {
+/* ── MY VALUES / COMMUNICATION PHILOSOPHY ── */
+.philosophy-section {
     padding: 80px 60px;
     background: var(--cream);
-}
-
-.qs-eyebrow-main {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 11px;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    color: var(--terracotta);
-    margin-bottom: 2rem;
-    font-weight: 400;
-}
-
-.qs-inner {
-    background: var(--blush);
-    border: 1px solid var(--card-border);
-    border-radius: 4px;
-    padding: 3rem;
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    gap: 3rem;
-    align-items: start;
-}
-
-.qs-divider {
-    width: 1px;
-    background: var(--card-border);
-    align-self: stretch;
-}
-
-.qs-col-label {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 11px;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    color: var(--muted);
-    margin-bottom: 1.5rem;
-    font-weight: 400;
-}
-
-/* Experience table inside the snapshot card */
-.exp-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.exp-table tr {
-    border-bottom: 1px solid var(--card-border);
-}
-
-.exp-table tr:last-child {
-    border-bottom: none;
-}
-
-.exp-table td {
-    padding: 0.9rem 0;
-    vertical-align: top;
-    font-size: 13.5px;
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 300;
-    text-transform: none;
-    letter-spacing: 0;
-}
-
-.exp-table .exp-role {
-    font-weight: 500;
-    color: var(--charcoal);
-    width: 38%;
-}
-
-.exp-table .exp-org {
-    color: var(--muted);
-    width: 35%;
-    font-weight: 300;
-    text-transform: none;
-}
-
-.exp-table .exp-date {
-    color: var(--muted);
-    opacity: 0.6;
-    text-align: right;
-    width: 27%;
-    white-space: nowrap;
-    font-size: 12px;
-}
-
-/* Skills pills */
-.skills-wrap {
     display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
+    justify-content: center;
 }
 
-.pill {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 12px;
-    padding: 6px 14px;
-    border-radius: 20px;
-    border: 1px solid var(--card-border);
-    color: var(--muted);
-    font-weight: 300;
-    letter-spacing: 0.02em;
-    background: transparent;
+.philosophy-container {
+    background: #F7F3F0;
+    border: 1px solid rgba(184, 92, 74, 0.12);
+    border-radius: 24px;
+    padding: 60px;
+    width: 100%;
+    max-width: 1400px;
+    box-shadow: 0 12px 40px rgba(0,0,0,0.04);
+    display: grid;
+    grid-template-columns: 52fr 1px 48fr;
+    gap: 30px;
+    align-items: center;
 }
 
-.pill.featured {
-    border-color: var(--terracotta);
-    color: var(--terracotta);
+.philosophy-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.philosophy-divider {
+    width: 1px;
+    background: rgba(184, 92, 74, 0.12);
+    height: 80%;
+    justify-self: center;
+}
+
+.philosophy-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.philosophy-quote {
+    font-family: 'Cormorant Garamond', serif;
     font-weight: 400;
+    font-style: italic;
+    font-size: 64px;
+    line-height: 1.08;
+    letter-spacing: -0.03em;
+    color: #1F1F1F;
+    margin: 0;
+}
+
+.philosophy-quote .highlight {
+    color: #B85C4A;
+}
+
+.philosophy-desc {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.8;
+    color: #555555;
+    max-width: 520px;
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+
+.status-button-wrap {
+    margin-top: 32px;
+}
+
+.status-button {
+    height: 42px;
+    padding: 0 20px;
+    border-radius: 999px;
+    border: 1px solid #D8A08F;
+    background: transparent;
+    color: #B85C4A;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.status-dot {
+    width: 6px;
+    height: 6px;
+    background: #B85C4A;
+    border-radius: 50%;
+    transition: background 0.3s ease;
+}
+
+.status-button:hover {
+    background: #B85C4A;
+    color: #FFFFFF;
+}
+
+.status-button:hover .status-dot {
+    background: #FFFFFF;
+}
+
+.philosophy-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.18em;
+    font-weight: 500;
+    color: #B85C4A;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.philosophy-uni {
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #1F1F1F;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.philosophy-degree {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    color: #666666;
+    line-height: 1.8;
+    margin-top: 8px;
+    margin-bottom: 24px;
+}
+
+.philosophy-cgpa-wrap {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.cgpa-number {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 72px;
+    font-weight: 500;
+    color: #B85C4A;
+    line-height: 1;
+}
+
+.cgpa-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    color: #777777;
+}
+
+.philosophy-academic-desc {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #666666;
+    max-width: 450px;
+    margin: 0;
 }
 
 /* Mobile */
 @media (max-width: 768px) {
-    .quick-snapshot {
+    .philosophy-section {
         padding: 60px 24px;
     }
 
-    .qs-inner {
+    .philosophy-container {
         grid-template-columns: 1fr;
-        gap: 2rem;
-        padding: 2rem;
+        gap: 40px;
+        padding: 40px 24px;
     }
 
-    .qs-divider {
-        display: none;
+    .philosophy-divider {
+        width: 100%;
+        height: 1px;
+        justify-self: stretch;
     }
 
-    .exp-table td {
-        font-size: 12px;
-    }
-
-    .exp-table .exp-date {
-        white-space: normal;
+    .philosophy-quote {
+        font-size: 42px;
     }
 }
 
