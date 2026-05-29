@@ -128,13 +128,13 @@ nav.scrolled {
     background: rgba(184, 92, 74, 0.06);
     color: #B85C4A;
     border-radius: 999px;
-    padding: 12px 24px;
+    padding: 10px 20px;
     font-family: 'Inter', sans-serif;
-    font-size: 13px;
+    font-size: 11px;
     letter-spacing: 0.15em;
     font-weight: 500;
     white-space: nowrap;
-    margin-bottom: 40px;
+    margin-bottom: 32px;
     
     opacity: 0;
     animation: h-fade 0.8s ease-out forwards;
@@ -143,11 +143,11 @@ nav.scrolled {
 .hero-v2-headline {
     font-family: 'Cormorant Garamond', serif;
     font-weight: 400;
-    font-size: 88px;
+    font-size: 64px;
     line-height: 0.95;
     letter-spacing: -0.03em;
     color: #1F1F1F;
-    margin: 0 0 32px 0;
+    margin: 0 0 24px 0;
     
     opacity: 0;
     animation: h-slide 0.8s ease-out 0.1s forwards;
@@ -160,12 +160,12 @@ nav.scrolled {
 
 .hero-v2-intro {
     font-family: 'Inter', sans-serif;
-    font-size: 26px;
+    font-size: 18px;
     font-weight: 400;
     line-height: 1.8;
     color: #444444;
-    max-width: 700px;
-    margin: 0 0 48px 0;
+    max-width: 540px;
+    margin: 0 0 40px 0;
     
     opacity: 0;
     animation: h-slide 0.8s ease-out 0.2s forwards;
@@ -180,14 +180,14 @@ nav.scrolled {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    height: 64px;
-    width: 230px;
+    height: 52px;
+    width: 190px;
     background: transparent;
     border: 1px solid #B85C4A;
     border-radius: 12px;
     color: #B85C4A;
     font-family: 'Inter', sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
     text-decoration: none;
     transition: background 0.3s ease, color 0.3s ease;
@@ -210,10 +210,10 @@ nav.scrolled {
 }
 
 .hero-v2-photo-inner {
-    width: 550px;
-    height: 750px;
-    border-top-left-radius: 275px;
-    border-top-right-radius: 275px;
+    width: 420px;
+    height: 580px;
+    border-top-left-radius: 210px;
+    border-top-right-radius: 210px;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     border: 1.5px solid #B85C4A;
@@ -259,16 +259,16 @@ nav.scrolled {
 /* Tablet */
 @media (max-width: 1200px) {
     .hero-v2-headline {
-        font-size: 64px;
+        font-size: 56px;
     }
     .hero-v2-intro {
-        font-size: 20px;
+        font-size: 16px;
     }
     .hero-v2-photo-inner {
-        width: 420px;
-        height: 572px;
-        border-top-left-radius: 210px;
-        border-top-right-radius: 210px;
+        width: 360px;
+        height: 500px;
+        border-top-left-radius: 180px;
+        border-top-right-radius: 180px;
     }
 }
 
@@ -298,18 +298,18 @@ nav.scrolled {
         padding: 10px 16px;
     }
     .hero-v2-headline {
-        font-size: 48px;
+        font-size: 44px;
     }
     .hero-v2-intro {
-        font-size: 18px;
+        font-size: 16px;
         margin-bottom: 32px;
     }
     .hero-v2-photo-inner {
         width: 100%;
-        max-width: 380px;
-        height: 520px;
-        border-top-left-radius: 190px;
-        border-top-right-radius: 190px;
+        max-width: 340px;
+        height: 460px;
+        border-top-left-radius: 170px;
+        border-top-right-radius: 170px;
     }
 }
 
@@ -319,7 +319,7 @@ nav.scrolled {
         padding: 8px 12px;
     }
     .hero-v2-headline {
-        font-size: 42px;
+        font-size: 38px;
     }
 }
 
