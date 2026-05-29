@@ -1013,7 +1013,7 @@ section {
 .polaroid-card {
     position: relative;
     width: 320px;
-    height: 560px;
+    height: 600px;
     background: #FFFFFF;
     padding: 18px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
@@ -1085,7 +1085,7 @@ section {
 .polaroid-content {
     display: flex;
     flex-direction: column;
-    height: 220px;
+    height: 260px;
 }
 
 .polaroid-title {
@@ -1107,7 +1107,7 @@ section {
     color: #333333;
     margin: 0 0 20px 0;
     display: -webkit-box;
-    -webkit-line-clamp: 4;
+    -webkit-line-clamp: 5;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
