@@ -915,7 +915,7 @@ section {
 /* ── ACADEMIC & STRATEGIC WORK ── */
 .academic-work-section {
     background: #F7F3F0;
-    padding: 120px 80px;
+    padding: 100px 60px;
     display: flex;
     justify-content: center;
 }
@@ -937,7 +937,7 @@ section {
 
 .aw-top-label {
     font-family: 'Inter', sans-serif;
-    font-size: 13px;
+    font-size: 11px;
     font-weight: 500;
     letter-spacing: 0.18em;
     text-transform: uppercase;
@@ -945,13 +945,13 @@ section {
     display: flex;
     align-items: center;
     gap: 12px;
-    margin-bottom: 24px;
+    margin-bottom: 20px;
 }
 
 .aw-main-heading {
     font-family: 'Cormorant Garamond', serif;
     font-weight: 500;
-    font-size: 84px;
+    font-size: 64px;
     line-height: 0.95;
     letter-spacing: -0.03em;
     color: #111111;
@@ -964,12 +964,12 @@ section {
 
 .aw-description {
     font-family: 'Inter', sans-serif;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 400;
     line-height: 1.8;
     color: #666666;
     max-width: 700px;
-    margin: 32px 0 0 0;
+    margin: 24px 0 0 0;
 }
 
 .aw-header-right {
@@ -982,14 +982,14 @@ section {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    height: 52px;
+    height: 48px;
     padding: 0 28px;
     border: 1px solid #B85C4A;
     border-radius: 999px;
     background: transparent;
     color: #B85C4A;
     font-family: 'Inter', sans-serif;
-    font-size: 14px;
+    font-size: 13px;
     letter-spacing: 0.14em;
     font-weight: 500;
     text-decoration: none;
@@ -1007,15 +1007,15 @@ section {
     flex-wrap: nowrap;
     justify-content: space-between;
     gap: 32px;
-    margin-top: 70px;
+    margin-top: 60px;
 }
 
 .polaroid-card {
     position: relative;
-    width: 320px;
-    height: 600px;
+    width: 280px;
+    height: 520px;
     background: #FFFFFF;
-    padding: 18px;
+    padding: 16px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
     transition: transform 0.35s ease, box-shadow 0.35s ease;
     flex-shrink: 0;
@@ -1027,8 +1027,8 @@ section {
     top: 10px;
     left: 50%;
     transform: translateX(-50%);
-    width: 18px;
-    height: 18px;
+    width: 14px;
+    height: 14px;
     background: radial-gradient(circle at 30% 30%, #D87A68, #B85C4A 60%, #8A3D2F);
     border-radius: 50%;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15), inset -2px -2px 4px rgba(0,0,0,0.2);
@@ -1054,8 +1054,8 @@ section {
 /* Image Area */
 .polaroid-image {
     width: 100%;
-    height: 280px;
-    margin-bottom: 24px;
+    height: 240px;
+    margin-bottom: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1069,7 +1069,7 @@ section {
 .monogram {
     font-family: 'Cormorant Garamond', serif;
     font-weight: 500;
-    font-size: 90px;
+    font-size: 72px;
     opacity: 0.2;
 }
 
@@ -1085,27 +1085,27 @@ section {
 .polaroid-content {
     display: flex;
     flex-direction: column;
-    height: 260px;
+    height: 228px;
 }
 
 .polaroid-title {
     font-family: 'Inter', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     letter-spacing: 0.08em;
     text-transform: uppercase;
     color: #B85C4A;
     line-height: 1.5;
-    margin: 0 0 16px 0;
+    margin: 0 0 12px 0;
 }
 
 .polaroid-desc {
     font-family: 'Inter', sans-serif;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 400;
-    line-height: 1.9;
+    line-height: 1.8;
     color: #333333;
-    margin: 0 0 20px 0;
+    margin: 0 0 16px 0;
     display: -webkit-box;
     -webkit-line-clamp: 5;
     -webkit-box-orient: vertical;
@@ -1121,12 +1121,12 @@ section {
 }
 
 .p-tag {
-    height: 28px;
-    padding: 0 12px;
+    height: 24px;
+    padding: 0 10px;
     border: 1px solid rgba(184, 92, 74, 0.35);
     border-radius: 999px;
     font-family: 'Inter', sans-serif;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 400;
     color: #B85C4A;
     background: transparent;
