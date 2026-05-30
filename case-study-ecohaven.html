@@ -5,13 +5,211 @@
     <link rel="icon" type="image/png" href="favicon.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manasa Harikrishnan — Marketing & Communications Portfolio</title>
+    <title>ECOHAVEN Case Study — Manasa Harikrishnan</title>
+    <meta name="description" content="ECOHAVEN — A sustainable fashion brand strategy built through audience research, social listening, brand development, and funnel-based content strategy. Case study by Manasa Harikrishnan.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=Inter:wght@300;400;500;600&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            background-color: #F7F3F0;
+        }
+
+        /* ── ECOHAVEN HERO ── */
+        section.ecohaven-hero {
+            background: #F7F3F0;
+            min-height: 100vh;
+            padding: 120px 80px 80px;
+            max-width: 1440px;
+            margin: 0 auto;
+        }
+
+        /* Top Label */
+        .ecohaven-top-label {
+            display: flex;
+            gap: 18px;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 32px;
+        }
+        .ecohaven-top-label span {
+            font-family: 'Inter', sans-serif;
+            font-size: 13px;
+            font-weight: 500;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: #B85C4A;
+        }
+        .ecohaven-top-label .dot-sep {
+            width: 4px;
+            height: 4px;
+            background: #B85C4A;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+
+        /* Accent Line */
+        .ecohaven-accent-line {
+            width: 60px;
+            height: 2px;
+            background: #B85C4A;
+            margin-bottom: 50px;
+        }
+
+        /* Main Grid */
+        .ecohaven-main-grid {
+            display: grid;
+            grid-template-columns: 45% 55%;
+            gap: 40px;
+            align-items: center;
+        }
+
+        /* Logo Lockup */
+        .ecohaven-logo-lockup {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+        .ecohaven-logo-img {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            flex-shrink: 0;
+            background: transparent;
+        }
+        .ecohaven-logo-divider {
+            width: 1px;
+            height: 120px;
+            background: rgba(184, 92, 74, 0.2);
+            flex-shrink: 0;
+        }
+        .ecohaven-brand-text {
+            display: flex;
+            flex-direction: column;
+        }
+        .ecohaven-brand-name {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 600;
+            font-size: 64px;
+            letter-spacing: -0.04em;
+            color: #16281D;
+            line-height: 0.9;
+            margin: 0;
+        }
+        .ecohaven-tagline {
+            font-family: 'Cormorant Garamond', serif;
+            font-style: italic;
+            font-weight: 400;
+            font-size: 32px;
+            color: #B85C4A;
+            margin-top: 10px;
+            margin-bottom: 0;
+            line-height: 1.1;
+        }
+
+        /* Brand Description */
+        .ecohaven-brand-desc {
+            margin-top: 30px;
+            max-width: 100%;
+        }
+        .ecohaven-brand-desc p {
+            font-family: 'Inter', sans-serif;
+            font-size: 18px;
+            line-height: 1.9;
+            color: #444444;
+            font-weight: 400;
+        }
+        .ecohaven-brand-desc p + p {
+            margin-top: 28px;
+        }
+
+        /* Right Column */
+        .ecohaven-right-col {
+            position: relative;
+        }
+        .ecohaven-workspace-img {
+            width: 100%;
+            height: auto;
+            border-radius: 16px;
+            display: block;
+            object-fit: cover;
+        }
+
+        /* Snapshot Cards */
+        .ecohaven-cards-row {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            margin-top: 70px;
+        }
+        .ecohaven-card {
+            background: #FFFFFF;
+            border-radius: 20px;
+            padding: 32px;
+            border: 1px solid rgba(0,0,0,0.05);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+            height: 220px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: default;
+        }
+        .ecohaven-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 18px 40px rgba(0,0,0,0.08);
+        }
+        .ecohaven-card-icon {
+            width: 36px;
+            height: 36px;
+            color: #B85C4A;
+        }
+        .ecohaven-card-title {
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            font-weight: 600;
+            color: #B85C4A;
+            margin: 0;
+        }
+        .ecohaven-card-content {
+            font-family: 'Inter', sans-serif;
+            font-size: 28px;
+            font-weight: 500;
+            color: #222222;
+            line-height: 1.4;
+            margin: 0;
+        }
+
+        /* Responsive */
+        @media (max-width: 1100px) {
+            .ecohaven-main-grid {
+                grid-template-columns: 1fr;
+                gap: 60px;
+            }
+            .ecohaven-brand-name { font-size: 72px; }
+            .ecohaven-tagline { font-size: 36px; }
+            .ecohaven-cards-row { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 768px) {
+            section.ecohaven-hero { padding: 100px 24px 60px; }
+            .ecohaven-logo-lockup { flex-direction: column; gap: 24px; }
+            .ecohaven-logo-divider { width: 60px; height: 1px; }
+            .ecohaven-brand-name { font-size: 56px; }
+            .ecohaven-tagline { font-size: 30px; }
+            .ecohaven-brand-desc p { font-size: 18px; }
+            .ecohaven-cards-row { grid-template-columns: 1fr 1fr; gap: 16px; }
+            .ecohaven-card { height: auto; min-height: 180px; }
+            .ecohaven-card-content { font-size: 22px; }
+        }
+        @media (max-width: 480px) {
+            .ecohaven-cards-row { grid-template-columns: 1fr; }
+        }
+    </style>
 </head>
 
 <body>
@@ -30,20 +228,123 @@
     </nav>
 
 
+    <section class="ecohaven-hero fade-in" id="ecohaven-hero">
+
+        <!-- Top Label -->
+        <div class="ecohaven-top-label">
+            <span>Digital Marketing Strategy</span>
+            <div class="dot-sep"></div>
+            <span>Brand Development</span>
+            <div class="dot-sep"></div>
+            <span>Content Marketing</span>
+        </div>
+
+        <!-- Accent Line -->
+        <div class="ecohaven-accent-line"></div>
+
+        <!-- Main Content Grid -->
+        <div class="ecohaven-main-grid">
+
+            <!-- LEFT COLUMN -->
+            <div class="ecohaven-left-col">
+
+                <!-- Logo + Brand Lockup -->
+                <div class="ecohaven-logo-lockup">
+                    <img src="ecohaven-logo.png" alt="ECOHAVEN Logo" class="ecohaven-logo-img">
+                    <div class="ecohaven-logo-divider"></div>
+                    <div class="ecohaven-brand-text">
+                        <h1 class="ecohaven-brand-name">ECOHAVEN</h1>
+                        <p class="ecohaven-tagline">Wear the Change.</p>
+                    </div>
+                </div>
+
+                <!-- Brand Description -->
+                <div class="ecohaven-brand-desc">
+                    <p>A sustainable fashion brand strategy designed for conscious consumers seeking affordable, minimalist, and environmentally responsible clothing.</p>
+                    <p>Built through audience research, social listening, brand development, and funnel-based content strategy to position ECOHAVEN within India's growing sustainable fashion market.</p>
+                </div>
+
+            </div>
+
+            <!-- RIGHT COLUMN — Workspace Visual -->
+            <div class="ecohaven-right-col">
+                <img
+                    src="ecohaven-workspace.png"
+                    alt="ECOHAVEN case study workspace — laptop, persona sheets, marketing funnel, content calendar"
+                    class="ecohaven-workspace-img"
+                >
+            </div>
+
+        </div>
+
+        <!-- Snapshot Cards -->
+        <div class="ecohaven-cards-row">
+
+            <!-- Card 1: Industry -->
+            <div class="ecohaven-card" id="card-industry">
+                <svg class="ecohaven-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2z"/>
+                    <path d="M12 6c1.5 0 3 .5 4 1.5L12 12 8 9.5C9 7.5 10.5 6 12 6z"/>
+                    <path d="M12 12v6"/>
+                    <path d="M8 9.5C6.5 11 6 13 6.5 15"/>
+                    <path d="M16 9.5c1.5 1.5 2 3.5 1.5 5.5"/>
+                </svg>
+                <p class="ecohaven-card-title">Industry</p>
+                <p class="ecohaven-card-content">Sustainable Fashion</p>
+            </div>
+
+            <!-- Card 2: Audience -->
+            <div class="ecohaven-card" id="card-audience">
+                <svg class="ecohaven-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="9" cy="7" r="4"/>
+                    <path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/>
+                    <circle cx="19" cy="9" r="3"/>
+                    <path d="M22 21v-1.5a3 3 0 0 0-3-3h-1"/>
+                </svg>
+                <p class="ecohaven-card-title">Audience</p>
+                <p class="ecohaven-card-content">Gen Z & Young Professionals</p>
+            </div>
+
+            <!-- Card 3: Positioning -->
+            <div class="ecohaven-card" id="card-positioning">
+                <svg class="ecohaven-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/>
+                    <line x1="7" y1="7" x2="7.01" y2="7"/>
+                </svg>
+                <p class="ecohaven-card-title">Positioning</p>
+                <p class="ecohaven-card-content">Affordable Sustainable Fashion</p>
+            </div>
+
+            <!-- Card 4: Strategy -->
+            <div class="ecohaven-card" id="card-strategy">
+                <svg class="ecohaven-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"/>
+                    <circle cx="12" cy="12" r="4"/>
+                    <line x1="12" y1="2" x2="12" y2="8"/>
+                    <line x1="12" y1="16" x2="12" y2="22"/>
+                    <line x1="2" y1="12" x2="8" y2="12"/>
+                    <line x1="16" y1="12" x2="22" y2="12"/>
+                </svg>
+                <p class="ecohaven-card-title">Strategy</p>
+                <p class="ecohaven-card-content">Research → Content → Conversion</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- DIVIDER -->
+    <div style="width: 100%; max-width: 1440px; margin: 0 auto; padding: 0 80px;">
+        <div style="width: 100%; height: 1px; background-color: rgba(62, 53, 49, 0.1);"></div>
+    </div>
+
+    <!-- BACK LINK + REST OF CASE STUDY -->
     <section class="case-study-hero"
-        style="padding-top: 120px; padding-bottom: 60px; max-width: 1000px; margin: 0 auto; padding-left: 5%; padding-right: 5%;">
+        style="padding-top: 60px; padding-bottom: 60px; max-width: 1000px; margin: 0 auto; padding-left: 5%; padding-right: 5%;">
         <div class="fade-in">
             <a href="index.html#projects"
-                style="font-size: 13px; color: var(--terracotta); text-decoration: none; display: inline-block; margin-bottom: 20px;">&larr;
+                style="font-size: 13px; color: var(--terracotta); text-decoration: none; display: inline-block; margin-bottom: 40px;">&larr;
                 Back to Projects</a>
-            <p
-                style="font-size: 14px; font-weight: 500; letter-spacing: 0.05em; color: var(--charcoal); margin-bottom: 12px; text-transform: uppercase;">
-                Marketing Strategy</p>
-            <h1
-                style="font-family: 'Cormorant Garamond', serif; font-size: 48px; font-weight: 500; color: var(--terracotta); margin-bottom: 24px; line-height: 1.1;">
-                ECOHAVEN — Digital Content Marketing Strategy</h1>
-
-            <div style="width: 100%; height: 1px; background-color: rgba(62, 53, 49, 0.1); margin: 40px 0;"></div>
 
             <div class="two-col" style="gap: 40px; margin-bottom: 40px;">
                 <div>
