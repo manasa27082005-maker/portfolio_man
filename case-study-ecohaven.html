@@ -19,205 +19,288 @@
         }
 
         /* ── ECOHAVEN HERO ── */
-        section.ecohaven-hero {
-            background: #F7F3F0;
-            padding: 60px 80px 20px;
-            max-width: 1440px;
-            margin: 0 auto;
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes expandLine {
+            from { width: 0; }
+            to { width: 65px; }
+        }
+        @keyframes floatWorkspace {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-12px); }
+            100% { transform: translateY(0px); }
         }
 
-        /* Top Label */
-        .ecohaven-top-label {
-            display: flex;
-            gap: 18px;
-            align-items: center;
-            flex-wrap: wrap;
-            margin-bottom: 32px;
+        section.ecohaven-hero {
+            /* Studio lighting effect */
+            background: radial-gradient(circle at 50% 20%, #FFFFFF 0%, #F7F3F0 60%);
+            width: 100%;
+            min-height: 100vh;
+            padding: 80px 80px 100px;
+            max-width: 1600px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
         }
-        .ecohaven-top-label span {
+
+        .ecohaven-hero-animate {
+            animation: fadeUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+            opacity: 0;
+        }
+        .delay-1 { animation-delay: 0.1s; }
+        .delay-2 { animation-delay: 0.2s; }
+        .delay-3 { animation-delay: 0.3s; }
+        .delay-4 { animation-delay: 0.4s; }
+        .delay-5 { animation-delay: 0.5s; }
+        .delay-6 { animation-delay: 0.6s; }
+
+        .ecohaven-top-label {
             font-family: 'Inter', sans-serif;
             font-size: 13px;
-            font-weight: 500;
-            letter-spacing: 0.18em;
+            font-weight: 600;
+            letter-spacing: 0.22em;
             text-transform: uppercase;
             color: #B85C4A;
-        }
-        .ecohaven-top-label .dot-sep {
-            width: 4px;
-            height: 4px;
-            background: #B85C4A;
-            border-radius: 50%;
-            flex-shrink: 0;
-        }
-
-        /* Accent Line */
-        .ecohaven-accent-line {
-            width: 60px;
-            height: 2px;
-            background: #B85C4A;
-            margin-bottom: 50px;
-        }
-
-        /* Main Grid */
-        .ecohaven-main-grid {
-            display: grid;
-            grid-template-columns: 45% 55%;
-            gap: 40px;
+            margin-bottom: 32px;
+            display: flex;
             align-items: center;
         }
 
-        /* Logo Lockup */
+        .ecohaven-accent-line {
+            width: 0;
+            height: 2px;
+            background: #B85C4A;
+            margin-top: 18px;
+            margin-bottom: 55px;
+            animation: expandLine 1s cubic-bezier(0.16, 1, 0.3, 1) forwards 0.3s;
+        }
+
+        .ecohaven-main-grid {
+            display: grid;
+            grid-template-columns: 46% 54%;
+            gap: 60px;
+            align-items: center;
+        }
+
         .ecohaven-logo-lockup {
             display: flex;
             align-items: center;
-            gap: 24px;
+            gap: 40px;
         }
+
         .ecohaven-logo-img {
-            width: 180px;
-            height: 180px;
+            width: 190px;
+            height: 190px;
             object-fit: contain;
-            flex-shrink: 0;
-            background: transparent;
+            clip-path: inset(0 0 25% 0);
+            filter: drop-shadow(0 15px 25px rgba(0,0,0,0.03));
+            transition: transform 0.5s ease;
         }
+        .ecohaven-logo-img:hover {
+            transform: scale(1.05);
+        }
+
         .ecohaven-logo-divider {
             width: 1px;
             height: 180px;
-            background: rgba(184, 92, 74, 0.2);
-            flex-shrink: 0;
+            background: linear-gradient(to bottom, rgba(22, 40, 29, 0), rgba(22, 40, 29, 0.15), rgba(22, 40, 29, 0));
         }
+
         .ecohaven-brand-text {
             display: flex;
             flex-direction: column;
+            justify-content: center;
         }
+
         .ecohaven-brand-name {
             font-family: 'Cormorant Garamond', serif;
+            font-size: 116px;
             font-weight: 600;
-            font-size: 64px;
+            line-height: 0.85;
             letter-spacing: -0.04em;
             color: #16281D;
-            line-height: 0.9;
             margin: 0;
+            text-shadow: 0 10px 30px rgba(22,40,29,0.05);
         }
+
         .ecohaven-tagline {
             font-family: 'Cormorant Garamond', serif;
+            font-size: 52px;
             font-style: italic;
             font-weight: 400;
-            font-size: 32px;
             color: #B85C4A;
-            margin-top: 10px;
+            margin-top: 12px;
             margin-bottom: 0;
-            line-height: 1.1;
         }
 
-        /* Brand Description */
-        .ecohaven-brand-desc {
-            margin-top: 30px;
-            max-width: 100%;
-        }
-        .ecohaven-brand-desc p {
+        .ecohaven-intro-statement {
             font-family: 'Inter', sans-serif;
-            font-size: 18px;
-            line-height: 1.9;
-            color: #444444;
+            font-size: 26px;
+            font-style: italic;
             font-weight: 400;
-        }
-        .ecohaven-brand-desc p + p {
-            margin-top: 28px;
+            line-height: 1.6;
+            color: #555555;
+            max-width: 580px;
+            margin-top: 60px;
+            margin-bottom: 0;
+            border-left: 3px solid rgba(184, 92, 74, 0.2);
+            padding-left: 24px;
         }
 
-        /* Right Column */
-        .ecohaven-right-col {
-            position: relative;
+        .ecohaven-project-description {
+            font-family: 'Inter', sans-serif;
+            font-size: 21px;
+            font-weight: 300;
+            line-height: 1.9;
+            color: #3E3E3E;
+            max-width: 650px;
+            margin-top: 40px;
+            margin-bottom: 0;
         }
+
+        .ecohaven-workspace-img-wrapper {
+            position: relative;
+            border-radius: 16px;
+            box-shadow: 0 40px 80px rgba(22, 40, 29, 0.12), 0 15px 35px rgba(0, 0, 0, 0.05);
+            animation: floatWorkspace 8s ease-in-out infinite;
+        }
+        
+        .ecohaven-workspace-img-wrapper::after {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            border-radius: 16px;
+            box-shadow: inset 0 0 0 1px rgba(255,255,255,0.4);
+            pointer-events: none;
+        }
+
         .ecohaven-workspace-img {
             width: 100%;
             height: auto;
-            border-radius: 16px;
             display: block;
             object-fit: cover;
+            border-radius: 16px;
         }
 
-        /* Snapshot Cards */
         .ecohaven-cards-row {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            gap: 24px;
-            margin-top: 50px;
+            gap: 28px;
+            margin-top: 90px;
         }
+
         .ecohaven-card {
-            background: #FFFFFF;
-            border-radius: 20px;
-            padding: 32px;
-            border: 1px solid rgba(0,0,0,0.05);
-            box-shadow: 0 18px 40px rgba(0,0,0,0.05);
-            height: auto;
-            min-height: 280px;
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-radius: 24px;
+            padding: 38px 34px;
+            border: 1px solid rgba(255,255,255,0.8);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.03), 0 5px 15px rgba(0,0,0,0.02);
+            height: 230px;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            cursor: default;
+            justify-content: flex-start;
+            transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+            position: relative;
+            overflow: hidden;
         }
+
+        .ecohaven-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: linear-gradient(135deg, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0) 100%);
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            pointer-events: none;
+        }
+
         .ecohaven-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 24px 50px rgba(0,0,0,0.08);
+            transform: translateY(-12px) scale(1.02);
+            box-shadow: 0 30px 60px rgba(0,0,0,0.06), 0 12px 24px rgba(0,0,0,0.04);
+            background: rgba(255, 255, 255, 0.95);
         }
+        
+        .ecohaven-card:hover::before {
+            opacity: 1;
+        }
+
         .ecohaven-card-icon-wrapper {
-            width: 90px;
-            height: 90px;
+            width: 52px;
+            height: 52px;
             border-radius: 50%;
-            background: #F7F3F0;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-bottom: 20px;
+            margin-bottom: 28px;
+            transition: transform 0.4s ease;
         }
+        
+        .ecohaven-card:hover .ecohaven-card-icon-wrapper {
+            transform: scale(1.1);
+        }
+
         .ecohaven-card-icon {
-            width: 64px;
-            height: 64px;
-            color: #B85C4A;
+            width: 24px;
+            height: 24px;
         }
+
+        #card-role .ecohaven-card-icon-wrapper { background: #DCE6D8; }
+        #card-duration .ecohaven-card-icon-wrapper { background: #EFE6DA; }
+        #card-tools .ecohaven-card-icon-wrapper { background: #DCE6D8; }
+        #card-deliverables .ecohaven-card-icon-wrapper { background: #B85C4A; }
+        #card-deliverables .ecohaven-card-icon { stroke: #FFFFFF; color: #FFFFFF; }
+
+        #card-role .ecohaven-card-icon, #card-duration .ecohaven-card-icon, #card-tools .ecohaven-card-icon {
+            stroke: #16281D;
+        }
+
         .ecohaven-card-title {
             font-family: 'Inter', sans-serif;
             font-size: 14px;
-            letter-spacing: 0.18em;
+            font-weight: 700;
+            letter-spacing: 0.22em;
             text-transform: uppercase;
-            font-weight: 600;
             color: #B85C4A;
-            margin: 0 0 12px 0;
-        }
-        .ecohaven-card-content {
-            font-family: 'Inter', sans-serif;
-            font-size: 28px;
-            font-weight: 500;
-            color: #222222;
-            line-height: 1.4;
-            margin: 0;
+            margin: 0 0 10px 0;
+            position: relative;
+            z-index: 1;
         }
 
-        /* Responsive */
-        @media (max-width: 1100px) {
+        .ecohaven-card-content {
+            font-family: 'Inter', sans-serif;
+            font-size: 19px;
+            font-weight: 500;
+            line-height: 1.6;
+            color: #16281D;
+            margin: 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 1200px) {
             .ecohaven-main-grid {
                 grid-template-columns: 1fr;
-                gap: 60px;
+                gap: 80px;
             }
-            .ecohaven-brand-name { font-size: 72px; }
-            .ecohaven-tagline { font-size: 36px; }
-            .ecohaven-cards-row { grid-template-columns: repeat(2, 1fr); }
+            .ecohaven-brand-name { font-size: 90px; }
+            .ecohaven-tagline { font-size: 42px; }
+            .ecohaven-cards-row { grid-template-columns: repeat(2, 1fr); gap: 24px; }
+            .ecohaven-card { height: auto; min-height: 200px; }
         }
         @media (max-width: 768px) {
             section.ecohaven-hero { padding: 100px 24px 60px; }
-            .ecohaven-logo-lockup { flex-direction: column; gap: 24px; }
-            .ecohaven-logo-divider { width: 60px; height: 1px; }
-            .ecohaven-brand-name { font-size: 56px; }
-            .ecohaven-tagline { font-size: 30px; }
-            .ecohaven-brand-desc p { font-size: 18px; }
-            .ecohaven-cards-row { grid-template-columns: 1fr 1fr; gap: 16px; }
-            .ecohaven-card { height: auto; min-height: 180px; }
-            .ecohaven-card-content { font-size: 22px; }
-        }
-        @media (max-width: 480px) {
-            .ecohaven-cards-row { grid-template-columns: 1fr; }
+            .ecohaven-logo-lockup { flex-direction: column; gap: 24px; text-align: center; }
+            .ecohaven-logo-divider { width: 60px; height: 1px; background: linear-gradient(to right, rgba(22, 40, 29, 0), rgba(22, 40, 29, 0.15), rgba(22, 40, 29, 0)); }
+            .ecohaven-brand-name { font-size: 64px; }
+            .ecohaven-tagline { font-size: 32px; }
+            .ecohaven-intro-statement { font-size: 20px; text-align: center; border-left: none; padding-left: 0; }
+            .ecohaven-project-description { font-size: 18px; text-align: center; }
+            .ecohaven-cards-row { grid-template-columns: 1fr; gap: 20px; }
         }
     </style>
 </head>
@@ -237,16 +320,11 @@
         </ul>
     </nav>
 
-
-    <section class="ecohaven-hero fade-in" id="ecohaven-hero">
+    <section class="ecohaven-hero" id="ecohaven-hero">
 
         <!-- Top Label -->
         <div class="ecohaven-top-label">
-            <span>Digital Marketing Strategy</span>
-            <div class="dot-sep"></div>
-            <span>Brand Development</span>
-            <div class="dot-sep"></div>
-            <span>Content Marketing</span>
+            DIGITAL MARKETING STRATEGY &bull; BRAND DEVELOPMENT &bull; CONTENT MARKETING
         </div>
 
         <!-- Accent Line -->
@@ -260,7 +338,7 @@
 
                 <!-- Logo + Brand Lockup -->
                 <div class="ecohaven-logo-lockup">
-                    <img src="ecohaven-logo.png" alt="ECOHAVEN Logo" class="ecohaven-logo-img">
+                    <img src="ecohaven-logo-clean.png" alt="ECOHAVEN Logo" class="ecohaven-logo-img">
                     <div class="ecohaven-logo-divider"></div>
                     <div class="ecohaven-brand-text">
                         <h1 class="ecohaven-brand-name">ECOHAVEN</h1>
@@ -268,19 +346,23 @@
                     </div>
                 </div>
 
-                <!-- Brand Description -->
-                <div class="ecohaven-brand-desc">
-                    <p>A sustainable fashion brand strategy designed for conscious consumers seeking affordable, minimalist, and environmentally responsible clothing.</p>
-                    <p>Built through audience research, social listening, brand development, and funnel-based content strategy to position ECOHAVEN within India's growing sustainable fashion market.</p>
-                </div>
+                <!-- Intro Statement -->
+                <p class="ecohaven-intro-statement">
+                    A complete brand ecosystem built from research, strategy, and execution.
+                </p>
+
+                <!-- Project Description -->
+                <p class="ecohaven-project-description">
+                    A semester-long digital marketing project for a hypothetical vegan fashion brand &mdash; from brand positioning and competitor analysis to audience personas, social listening, and full content execution.
+                </p>
 
             </div>
 
-            <!-- RIGHT COLUMN — Workspace Visual -->
+            <!-- RIGHT COLUMN -->
             <div class="ecohaven-right-col">
                 <img
-                    src="ecohaven-workspace.png"
-                    alt="ECOHAVEN case study workspace — laptop, persona sheets, marketing funnel, content calendar"
+                    src="ecohaven-workspace-premium.png"
+                    alt="Brand Strategy Workspace for ECOHAVEN"
                     class="ecohaven-workspace-img"
                 >
             </div>
@@ -290,68 +372,66 @@
         <!-- Snapshot Cards -->
         <div class="ecohaven-cards-row">
 
-            <!-- Card 1: Industry -->
-            <div class="ecohaven-card" id="card-industry">
+            <!-- Card 1: ROLE -->
+            <div class="ecohaven-card" id="card-role">
                 <div class="ecohaven-card-icon-wrapper">
-                    <svg class="ecohaven-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                        <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2z"/>
-                        <path d="M12 6c1.5 0 3 .5 4 1.5L12 12 8 9.5C9 7.5 10.5 6 12 6z"/>
-                        <path d="M12 12v6"/>
-                        <path d="M8 9.5C6.5 11 6 13 6.5 15"/>
-                        <path d="M16 9.5c1.5 1.5 2 3.5 1.5 5.5"/>
+                    <!-- Minimal leaf icon -->
+                    <svg class="ecohaven-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path>
+                        <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path>
                     </svg>
                 </div>
-                <div style="flex-grow: 1; display: flex; flex-direction: column; justify-content: flex-end;">
-                    <p class="ecohaven-card-title">Industry</p>
-                    <p class="ecohaven-card-content">Sustainable Fashion</p>
+                <div>
+                    <p class="ecohaven-card-title">ROLE</p>
+                    <p class="ecohaven-card-content">Brand Strategist</p>
                 </div>
             </div>
 
-            <!-- Card 2: Audience -->
-            <div class="ecohaven-card" id="card-audience">
+            <!-- Card 2: DURATION -->
+            <div class="ecohaven-card" id="card-duration">
                 <div class="ecohaven-card-icon-wrapper">
-                    <svg class="ecohaven-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                        <circle cx="9" cy="7" r="4"/>
-                        <path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/>
-                        <circle cx="19" cy="9" r="3"/>
-                        <path d="M22 21v-1.5a3 3 0 0 0-3-3h-1"/>
+                    <!-- Audience / People icon -->
+                    <svg class="ecohaven-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="9" cy="7" r="4"></circle>
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
                     </svg>
                 </div>
-                <div style="flex-grow: 1; display: flex; flex-direction: column; justify-content: flex-end;">
-                    <p class="ecohaven-card-title">Audience</p>
-                    <p class="ecohaven-card-content">Gen Z & Young Professionals</p>
+                <div>
+                    <p class="ecohaven-card-title">DURATION</p>
+                    <p class="ecohaven-card-content">3 phases &bull; 1 semester</p>
                 </div>
             </div>
 
-            <!-- Card 3: Positioning -->
-            <div class="ecohaven-card" id="card-positioning">
+            <!-- Card 3: TOOLS -->
+            <div class="ecohaven-card" id="card-tools">
                 <div class="ecohaven-card-icon-wrapper">
-                    <svg class="ecohaven-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                        <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/>
-                        <line x1="7" y1="7" x2="7.01" y2="7"/>
+                    <!-- Tag / Tool icon -->
+                    <svg class="ecohaven-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
+                        <line x1="7" y1="7" x2="7.01" y2="7"></line>
                     </svg>
                 </div>
-                <div style="flex-grow: 1; display: flex; flex-direction: column; justify-content: flex-end;">
-                    <p class="ecohaven-card-title">Positioning</p>
-                    <p class="ecohaven-card-content">Affordable Sustainable Fashion</p>
+                <div>
+                    <p class="ecohaven-card-title">TOOLS</p>
+                    <p class="ecohaven-card-content">Canva &bull; BrandMentions &bull; Pinterest</p>
                 </div>
             </div>
 
-            <!-- Card 4: Strategy -->
-            <div class="ecohaven-card" id="card-strategy">
+            <!-- Card 4: DELIVERABLES -->
+            <div class="ecohaven-card" id="card-deliverables">
                 <div class="ecohaven-card-icon-wrapper">
-                    <svg class="ecohaven-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                        <circle cx="12" cy="12" r="10"/>
-                        <circle cx="12" cy="12" r="4"/>
-                        <line x1="12" y1="2" x2="12" y2="8"/>
-                        <line x1="12" y1="16" x2="12" y2="22"/>
-                        <line x1="2" y1="12" x2="8" y2="12"/>
-                        <line x1="16" y1="12" x2="22" y2="12"/>
+                    <!-- Target icon -->
+                    <svg class="ecohaven-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <circle cx="12" cy="12" r="6"></circle>
+                        <circle cx="12" cy="12" r="2"></circle>
                     </svg>
                 </div>
-                <div style="flex-grow: 1; display: flex; flex-direction: column; justify-content: flex-end;">
-                    <p class="ecohaven-card-title">Strategy</p>
-                    <p class="ecohaven-card-content">Research → Content → Conversion</p>
+                <div>
+                    <p class="ecohaven-card-title">DELIVERABLES</p>
+                    <p class="ecohaven-card-content">Website &bull; Blog &bull; Email &bull; Moodboard</p>
                 </div>
             </div>
 
